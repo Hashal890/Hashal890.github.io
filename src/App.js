@@ -8,7 +8,11 @@ function App() {
   const { isDark } = useContext(AppContext);
 
   return (
-    <Box className={isDark ? Styles.darkTheme : Styles.lightTheme}>
+    <Box
+      className={isDark ? Styles.darkTheme : Styles.lightTheme}
+      pl="15rem"
+      pr="15rem"
+    >
       <Home />
     </Box>
   );

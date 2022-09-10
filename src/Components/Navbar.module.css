@@ -1,11 +1,10 @@
 .container {
   align-items: center;
   gap: 2rem;
-  /* max-width: 1000px; */
   margin: auto;
   padding: 1rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  /* position: fixed;
+  z-index: 10000; */
 }
 .buttonDark {
   color: white;

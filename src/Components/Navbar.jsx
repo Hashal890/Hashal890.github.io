@@ -14,14 +14,7 @@ import { FaMoon, FaSun, FaGithub } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import NavLink from "./NavLink";
-
-const links = [
-  { name: "Home", path: "/" },
-  { name: "About", path: "/about" },
-  { name: "Skills ", path: "/skills" },
-  { name: "Projects", path: "/projects" },
-  { name: "Contact", path: "/contact" },
-];
+import { NavbarLinks } from "../assets/data.js";
 
 export default function Navbar() {
   const { toggleColorMode } = useColorMode();
@@ -50,7 +43,7 @@ export default function Navbar() {
         />
         <HStack spacing="4" alignItems="center">
           <HStack as="nav" spacing="4" display={{ base: "none", md: "flex" }}>
-            {links.map((link, i) => (
+            {NavbarLinks.map((link, i) => (
               <NavLink
                 key={i}
                 to={link.path}
@@ -89,7 +82,7 @@ export default function Navbar() {
           display={["inherit", "inherit", "none"]}
         >
           <Stack as="nav" spacing="4" alignItems="center" w="">
-            {links.map((link, i) => (
+            {NavbarLinks.map((link, i) => (
               <NavLink
                 key={i}
                 to={link.path}

@@ -116,3 +116,10 @@ export const NavbarLinks = [
   { name: "Projects", path: "/projects" },
   { name: "Contact", path: "/contact" },
 ];
+
+export const ProjectsList = [
+  {
+    title: "Dot & Key Clone",
+    description: "",
+  },
+];

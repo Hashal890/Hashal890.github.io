@@ -10,6 +10,7 @@ import {
   SimpleGrid,
   Box,
   ScaleFade,
+  Image,
 } from "@chakra-ui/react";
 import React from "react";
 import Navbar from "../Components/Navbar";
@@ -40,9 +41,20 @@ export default function Skills() {
                         rounded="xl"
                         _hover={{ shadow: "md" }}
                       >
-                        <Box mt="2" fontSize="3xl" color={skill.color}>
-                          {skill.icon}
-                        </Box>
+                        {skill.name === "Postman" ? (
+                          <Image
+                            src="https://www.svgrepo.com/show/354202/postman-icon.svg"
+                            alt="Postman"
+                            mt="3"
+                            h="35px"
+                            w="35px"
+                          />
+                        ) : (
+                          <Box mt="2" fontSize="3xl" color={skill.color}>
+                            {skill.icon}
+                          </Box>
+                        )}
+
                         <Text as="h4" fontSize="md" py="2">
                           {skill.name}
                         </Text>

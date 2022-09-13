@@ -96,6 +96,12 @@ export const SkillsList = [
     color: "red.500",
   },
   {
+    name: "Postman",
+    link: "https://www.postman.com/",
+    icon: "https://www.svgrepo.com/show/354202/postman-icon.svg",
+    color: "red.500",
+  },
+  {
     name: "Data Structures and Algorithms",
     link: "#",
     icon: <FaGitAlt />,

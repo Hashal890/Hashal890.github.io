@@ -7,7 +7,9 @@ export default function Contact() {
   return (
     <Flex flexDir="column" h="100vh">
       <Navbar />
-      <Heading>Contact Page</Heading>
+      <Heading m="auto" mt="50">
+        Contact page is in progress...
+      </Heading>
       <Spacer />
       <Footer />
     </Flex>

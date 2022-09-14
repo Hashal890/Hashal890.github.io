@@ -97,8 +97,8 @@ export const SkillsList = [
   },
   {
     name: "Postman",
-    link: "https://www.postman.com/",
-    icon: "https://www.svgrepo.com/show/354202/postman-icon.svg",
+    link: "https://git-scm.com/",
+    icon: <FaGitAlt />,
     color: "red.500",
   },
   {
@@ -119,7 +119,107 @@ export const NavbarLinks = [
 
 export const ProjectsList = [
   {
+    title: "Nature Basket Clone",
+    description:
+      "Nature’s Basket is India’s pioneering food destination present through physical retail stores, online portal and a mobile application.",
+    techStack: [
+      "HTML",
+      "CSS",
+      "JS",
+      "React",
+      "WebScrapping",
+      "Chakra-UI",
+      "Bootstrap",
+    ],
+    githubUrl: "https://github.com/Hashal890/stark-meeting-6715",
+    liveUrl: "https://naturesbasketclone.vercel.app/",
+  },
+  {
+    title: "Zoom Car Clone",
+    description:
+      "Zoomcar is an Indian car sharing platform, headquartered in Bangalore. The company was founded in 2013 by David Back and Greg Moran. It currently operates in 34+ cities.",
+    techStack: ["HTML", "CSS", "JS", "React", "Chakra-UI", "Bootstrap"],
+    githubUrl: "https://github.com/Hashal890/educated-earth-4277",
+    liveUrl: "https://zoomcarclone.vercel.app/",
+  },
+  {
     title: "Dot & Key Clone",
-    description: "",
+    description:
+      "Dot & Key is a fresh take on skincare. One that's founded on the understanding that everyone is unique.",
+    techStack: [
+      "HTML",
+      "CSS",
+      "JS",
+      "WebScrapping",
+      "Bootstrap",
+      "Slick Slider",
+      "Jquery",
+    ],
+    githubUrl: "https://github.com/Hashal890/dot-key-clone",
+    liveUrl: "https://dotandkeyclone.netlify.app/",
+  },
+  {
+    title: "Kimaye Clone",
+    description:
+      "Consistently delivering the safest and highest-quality fruits at your doorstep. Our roots lie in the principles of cooperation and partnership.",
+    techStack: ["HTML", "CSS", "JS", "Bootstrap"],
+    githubUrl: "https://github.com/Hashal890/Team-Kimayi",
+    liveUrl: "https://kimaye-masai.netlify.app/",
+  },
+  {
+    title: "Sapce Tourism Website",
+    description:
+      "Website that takes you to some planets like moon, mars, europa and titan.",
+    techStack: ["HTML", "CSS", "JS", "Bootstrap"],
+    githubUrl: "https://github.com/Hashal890/Space-tourism-website",
+    liveUrl: "https://space-tourism-123.netlify.app/",
+  },
+  {
+    title: "Json Mock Server",
+    description:
+      "An api which contains some information which is avialable for everyone.",
+    techStack: ["HTML", "CSS", "JS", "Json Server", "Heroku"],
+    githubUrl: "https://github.com/Hashal890/Json-Mock-Server",
+    liveUrl: "https://harshal-json-mock-server.herokuapp.com/",
+  },
+  {
+    title: "Star Wars Searchbar",
+    description:
+      "An searchbar, where you can search for characters of the Star Wars.",
+    techStack: ["HTML", "CSS", "JS"],
+    githubUrl: "https://github.com/Hashal890/Star-Wars",
+    liveUrl: "https://star-wars-unit3.netlify.app/",
+  },
+  {
+    title: "Youtube App",
+    description:
+      "An basic youtube application where you can search and watch videos.",
+    techStack: ["HTML", "CSS", "JS"],
+    githubUrl: "https://github.com/Hashal890/Youtube-App",
+    liveUrl: "https://youtube-app-unit3.netlify.app/",
+  },
+  {
+    title: "Weather App",
+    description:
+      "An basic weather application where you can get live weather information.",
+    techStack: ["HTML", "CSS", "JS"],
+    githubUrl: "https://github.com/Hashal890/Weather-App",
+    liveUrl: "https://weather-app-unit3.netlify.app/",
+  },
+  {
+    title: "Food App",
+    description:
+      "An basic food application where you can search for different recipies and also get top recipies.",
+    techStack: ["HTML", "CSS", "JS"],
+    githubUrl: "https://github.com/Hashal890/Food-App",
+    liveUrl: "https://food-app-unit3.netlify.app/",
+  },
+  {
+    title: "Hotstar Searchbar",
+    description:
+      "An basic food application where you can search for movies and also get trending movies.",
+    techStack: ["HTML", "CSS", "JS"],
+    githubUrl: "https://github.com/Hashal890/Hotstar-Search-Bar",
+    liveUrl: "https://hotstar-search-bar-unit3.netlify.app/",
   },
 ];

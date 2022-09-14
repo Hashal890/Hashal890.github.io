@@ -67,8 +67,9 @@ export default function HomeBanner() {
             fontFamily={"body"}
           >
             Graduated from <Code colorScheme="linkedin"> Masai School </Code>{" "}
-            and looking for an opportunity to enhance my skills and building
-            some good products for society...
+            and having <Code colorScheme="pink">1200+ hours</Code> coding
+            experience. Looking for an opportunity to enhance my skills and
+            building some good products for society...
             <br />
             <br />
             <Code animation="infinite" fontSize={"xl"}>

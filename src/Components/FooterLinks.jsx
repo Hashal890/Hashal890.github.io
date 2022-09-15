@@ -3,9 +3,8 @@ import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 
 export const FooterLinks = {
-  copyright: `Copyright © ${new Date().getFullYear()} El Midaoui Ziad. All Rights Reserved.`,
   author: {
-    name: "El Midaoui Ziad",
+    name: "Harshal Pardeshi",
     accounts: [
       {
         url: "https://www.linkedin.com/in/harshalpardeshi/",

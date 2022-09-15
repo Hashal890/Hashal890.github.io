@@ -161,7 +161,8 @@ export const ProjectsList = [
     ],
     githubUrl: "https://github.com/Hashal890/dot-key-clone",
     liveUrl: "https://dotandkeyclone.netlify.app/",
-    image: "https://img.buzzfeed.com/buzzfeed-static/static/2020-05/14/19/asset/0329e3af71dc/sub-buzz-298-1589485926-2.png?downsize=700%3A%2A&output-quality=auto&output-format=auto",
+    image:
+      "https://img.buzzfeed.com/buzzfeed-static/static/2020-05/14/19/asset/0329e3af71dc/sub-buzz-298-1589485926-2.png?downsize=700%3A%2A&output-quality=auto&output-format=auto",
   },
   {
     title: "Kimaye Clone",
@@ -180,7 +181,8 @@ export const ProjectsList = [
     techStack: ["HTML", "CSS", "JS", "Bootstrap"],
     githubUrl: "https://github.com/Hashal890/Space-tourism-website",
     liveUrl: "https://space-tourism-123.netlify.app/",
-    image: "https://img.freepik.com/free-vector/space-background-design_1300-145.jpg",
+    image:
+      "https://img.freepik.com/free-vector/space-background-design_1300-145.jpg",
   },
   {
     title: "Json Mock Server",
@@ -198,7 +200,8 @@ export const ProjectsList = [
     techStack: ["HTML", "CSS", "JS"],
     githubUrl: "https://github.com/Hashal890/Star-Wars",
     liveUrl: "https://star-wars-unit3.netlify.app/",
-    image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/star-wars-characters-ranked-1577122930.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*",
+    image:
+      "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/star-wars-characters-ranked-1577122930.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*",
   },
   {
     title: "Youtube App",
@@ -217,7 +220,8 @@ export const ProjectsList = [
     techStack: ["HTML", "CSS", "JS"],
     githubUrl: "https://github.com/Hashal890/Weather-App",
     liveUrl: "https://weather-app-unit3.netlify.app/",
-    image: "https://i.pinimg.com/originals/ab/96/a8/ab96a8d990b339f53202e32777481a63.png",
+    image:
+      "https://i.pinimg.com/originals/ab/96/a8/ab96a8d990b339f53202e32777481a63.png",
   },
   {
     title: "Food App",
@@ -238,5 +242,47 @@ export const ProjectsList = [
     liveUrl: "https://hotstar-search-bar-unit3.netlify.app/",
     image:
       "https://malwaretips.com/blogs/wp-content/uploads/2018/02/Amazing-Movie-Search.jpg",
+  },
+];
+
+export const EducationDetails = [
+  {
+    title: "Masai School, Bangalore",
+    description:
+      "Given 1200+ hours of coding and solved 500+ dsa problems within 7 months.",
+    role: "Full Stack Web Development",
+    skills: [],
+    period: "2022 – present",
+  },
+  {
+    title: "Government Polytechnic, Nashik",
+    description:
+      "The three years contain theoretical courses to found a strong basis in logical reasoning.",
+    role: "Diploma in Mechanical Engineering",
+    skills: ["8.8 GPA"],
+    period: "2018 – 2021",
+  },
+  {
+    title: "LVM Jr. College, Bhadgaon",
+    description: "Formation of base of education for future studies.",
+    role: "SSC",
+    skills: ["9.2 CGPA"],
+    period: "2017 – 2018",
+  },
+];
+
+export const ExperienceDetails = [
+  {
+    title: "Supervisor",
+    role: "Mechanical Engineer Intern",
+    description:
+      "After completing the three years of diploma I decided to take some practical knowledge, so I joined TATA Motors, Pune as intern. My work was to supervise on the workers.",
+    skills: [
+      "Leadership",
+      "Team Collaboration",
+      "Problem Solving",
+      "Presentations",
+    ],
+    period: "October 2021 – February 2022",
   },
 ];

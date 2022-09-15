@@ -10,6 +10,7 @@ import {
   Link,
   Button,
   Spacer,
+  Image,
 } from "@chakra-ui/react";
 import { FaGithubAlt } from "react-icons/fa";
 import { SiGithub } from "react-icons/si";
@@ -21,6 +22,7 @@ export default function ProjectCard({
   techStack,
   githubUrl,
   liveUrl,
+  image,
 }) {
   return (
     <Box
@@ -33,8 +35,8 @@ export default function ProjectCard({
       position="relative"
       rounded="md"
     >
-      <Flex justifyContent="space-between">
-        <Stack spacing="1" pl="3" align="left">
+      <Flex justifyContent="space-between" alignItems="center">
+        <Stack spacing="1" pl="3" align="left" w="55%">
           <Flex gap="1rem" align="center">
             <FaGithubAlt />
             <Heading
@@ -47,20 +49,21 @@ export default function ProjectCard({
               {title}
             </Heading>
           </Flex>
-          <Stack
+          <Flex
             pb="1"
             spacing="1"
             pt="3"
             isInline
             alignItems="center"
-            display={["none", "none", "flex", "flex"]}
+            gap="0.25rem"
+            flexWrap="wrap"
           >
             {techStack.map((language, index) => (
               <Tag size="sm" padding="1" key={index + 1}>
                 {language}
               </Tag>
             ))}
-          </Stack>
+          </Flex>
           <Text as="i" align="left" fontSize="sm" pb="1">
             {description}
           </Text>
@@ -88,6 +91,7 @@ export default function ProjectCard({
             </Link>
           </Flex>
         </Stack>
+        <Image src={image} alt={title} w="30%" borderRadius="30px" />
       </Flex>
     </Box>
   );

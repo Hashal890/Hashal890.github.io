@@ -17,7 +17,7 @@ export default function Projects() {
   return (
     <Flex flexDir="column" h="100vh">
       <Navbar />
-      <Box w={["95%", "80%", "70%"]} m="auto">
+      <Box w={["95%", "90%", "80%"]} m="auto">
         <Tabs variant="soft-rounded" colorScheme="blue" align="center" w="100%">
           <TabPanels minHeight={"50vh"}>
             <TabPanel px={0}>
@@ -30,6 +30,7 @@ export default function Projects() {
                     techStack={rep.techStack}
                     githubUrl={rep.githubUrl}
                     liveUrl={rep.liveUrl}
+                    image={rep.image}
                   />
                 ))}
               </SimpleGrid>

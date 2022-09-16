@@ -9,7 +9,7 @@ export default function About() {
   return (
     <Flex flexDir="column" h="100vh">
       <Navbar />
-      <Box w={["100%", "85%", "75%"]} m="auto" mt="10">
+      <Box w={["90%", "85%", "65%"]} m="auto" mt="10">
         <Heading>
           <Flex alignItems="center">
             <Box
@@ -60,7 +60,6 @@ export default function About() {
               role={e.role}
               skills={e.skills}
               period={e.period}
-              description={e.description}
             />
           ))}
         </VStack>

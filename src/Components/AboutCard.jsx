@@ -7,23 +7,14 @@ import {
   Text,
   Tag,
   Heading,
-  useDisclosure,
-  Collapse,
 } from "@chakra-ui/react";
-import {
-  IoChevronDownCircleOutline,
-  IoChevronDownCircleSharp,
-} from "react-icons/io5";
 
 export default function AboutCard({
   title,
-  description,
   role,
   skills,
   period,
 }) {
-  const { isOpen, onToggle } = useDisclosure();
-
   return (
     <Box
       px="4"
@@ -36,65 +27,31 @@ export default function AboutCard({
       rounded="md"
     >
       <Flex justifyContent="space-between">
-        <Flex>
-          <Stack spacing="1" pl="3" align="left">
-            <Heading align="left" fontSize="15">
-              {title}
-            </Heading>
-            <Text color="gray.400" fontSize="12" align="left">
-              {period}
-            </Text>
-            <Text as="i" align="left" fontSize="sm">
-              {role}
-            </Text>
-            <Stack
-              spacing="1"
-              mt="3"
-              isInline
-              alignItems="center"
-              display={["none", "none", "flex", "flex"]}
-            >
-              {skills.map((skill) => (
-                <Tag size="sm" padding="1" key={skill}>
-                  {skill}
-                </Tag>
-              ))}
-            </Stack>
-          </Stack>
-        </Flex>
-        <Stack display={["flex", "flex"]}>
-          <Text
-            color="blue.400"
-            fontSize="24"
-            cursor="pointer"
-            onClick={onToggle}
-          >
-            {isOpen ? (
-              <IoChevronDownCircleSharp />
-            ) : (
-              <IoChevronDownCircleOutline />
-            )}
+        <Stack spacing="1" pl="3" align="left">
+          <Heading align="left" fontSize="15">
+            {title}
+          </Heading>
+          <Text color="gray.400" fontSize="12" align="left">
+            {period}
           </Text>
+          <Text as="i" align="left" fontSize="sm">
+            {role}
+          </Text>
+          <Flex
+            spacing="1"
+            mt="3"
+            alignItems="center"
+            flexWrap="wrap"
+            gap="0.25rem"
+          >
+            {skills.map((skill) => (
+              <Tag size="sm" padding="0 3px" key={skill}>
+                {skill}
+              </Tag>
+            ))}
+          </Flex>
         </Stack>
       </Flex>
-      <Stack
-        spacing="1"
-        mt="3"
-        isInline
-        alignItems="center"
-        display={["flex", "flex", "none", "none"]}
-      >
-        {skills.map((skill) => (
-          <Tag size="sm" padding="0 3px" key={skill}>
-            {skill}
-          </Tag>
-        ))}
-      </Stack>
-      <Collapse in={isOpen} animateOpacity>
-        <Text p="3" align="left" fontSize="sm">
-          {description}
-        </Text>
-      </Collapse>
     </Box>
   );
 }

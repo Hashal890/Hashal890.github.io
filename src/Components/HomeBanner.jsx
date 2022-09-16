@@ -76,7 +76,8 @@ export default function HomeBanner() {
         >
           An <Code colorScheme="green">FULL STACK WEB DEVELOPER</Code> graduated
           from <Code colorScheme="linkedin"> Masai School </Code> having{" "}
-          <Code colorScheme="pink">1200+ hours</Code> coding experience. Seek to
+          <Code colorScheme="pink">1200+ hours</Code> coding experience and
+          solved <Code colorScheme="pink">500+ </Code> dsa problems. Seek to
           join the tech industry to develop my technical skills and
           interpersonal skills.
           <br />

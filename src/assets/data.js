@@ -175,6 +175,16 @@ export const ProjectsList = [
       "https://www.thespruce.com/thmb/mbyAoYkqn-y-pqASxWjz5NCEb4Q=/3530x3530/smart/filters:no_upscale()/june-fruit-drop-1403308-02-4f53df5c1caf40f197e8a8c619ded693.jpg",
   },
   {
+    title: "Star Wars Searchbar",
+    description:
+      "An searchbar, where you can search for characters of the Star Wars.",
+    techStack: ["HTML", "CSS", "JS"],
+    githubUrl: "https://github.com/Hashal890/Star-Wars",
+    liveUrl: "https://star-wars-unit3.netlify.app/",
+    image:
+      "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/star-wars-characters-ranked-1577122930.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*",
+  },
+  {
     title: "Space Tourism Website",
     description:
       "Website that takes you to some planets like moon, mars, europa and titan.",
@@ -193,16 +203,7 @@ export const ProjectsList = [
     liveUrl: "https://harshal-json-mock-server.herokuapp.com/",
     image: "https://guviblogs.files.wordpress.com/2014/08/database_server.jpg",
   },
-  {
-    title: "Star Wars Searchbar",
-    description:
-      "An searchbar, where you can search for characters of the Star Wars.",
-    techStack: ["HTML", "CSS", "JS"],
-    githubUrl: "https://github.com/Hashal890/Star-Wars",
-    liveUrl: "https://star-wars-unit3.netlify.app/",
-    image:
-      "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/star-wars-characters-ranked-1577122930.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*",
-  },
+  
   {
     title: "Youtube App",
     description:
@@ -248,26 +249,15 @@ export const ProjectsList = [
 export const EducationDetails = [
   {
     title: "Masai School, Bangalore",
-    description:
-      "Given 1200+ hours of coding and solved 500+ dsa problems within 7 months.",
     role: "Full Stack Web Development",
     skills: [],
-    period: "2022 – present",
+    period: "March 2022 – Present",
   },
   {
     title: "Government Polytechnic, Nashik",
-    description:
-      "The three years contain theoretical courses to found a strong basis in logical reasoning.",
     role: "Diploma in Mechanical Engineering",
     skills: ["8.8 GPA"],
     period: "2018 – 2021",
-  },
-  {
-    title: "LVM Jr. College, Bhadgaon",
-    description: "Formation of base of education for future studies.",
-    role: "SSC",
-    skills: ["9.2 CGPA"],
-    period: "2017 – 2018",
   },
 ];
 
@@ -275,8 +265,6 @@ export const ExperienceDetails = [
   {
     title: "Supervisor",
     role: "Mechanical Engineer Intern",
-    description:
-      "After completing the three years of diploma I decided to take some practical knowledge, so I joined TATA Motors, Pune as intern. My work was to supervise on the workers.",
     skills: [
       "Leadership",
       "Team Collaboration",

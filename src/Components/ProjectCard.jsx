@@ -35,7 +35,7 @@ export default function ProjectCard({
       position="relative"
       rounded="md"
     >
-      <Flex justifyContent="space-between" alignItems="center">
+      <Flex justifyContent="space-between" alignItems="start">
         <Stack spacing="1" pl="3" align="left" w="55%">
           <Flex gap="1rem" align="center">
             <FaGithubAlt />
@@ -75,18 +75,22 @@ export default function ProjectCard({
                 colorScheme="whatsapp"
                 variant="solid"
                 _hover={{ textDecor: "none" }}
+                fontSize="small"
+                p="2"
               >
                 View Code
               </Button>
             </Link>
             <Link href={liveUrl}>
               <Button
+                p="2"
+                fontSize="small"
                 leftIcon={<BiWorld />}
                 colorScheme="linkedin"
                 variant="solid"
                 _hover={{ textDecor: "none" }}
               >
-                View Live
+                View Deploy
               </Button>
             </Link>
           </Flex>

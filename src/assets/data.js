@@ -7,6 +7,7 @@ import {
   SiNodedotjs,
   SiTypescript,
   SiBootstrap,
+  SiHeroku,
 } from "react-icons/si";
 import {
   FaGitAlt,
@@ -14,6 +15,8 @@ import {
   FaReact,
   FaCss3Alt,
   FaRegFileCode,
+  FaGithub,
+  FaLaptopCode,
 } from "react-icons/fa";
 
 export const SkillsList = [
@@ -27,7 +30,7 @@ export const SkillsList = [
     name: "CSS",
     link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
     icon: <FaCss3Alt />,
-    color: "green.600",
+    color: "blue.600",
   },
   {
     name: "Javascript",
@@ -45,31 +48,31 @@ export const SkillsList = [
     name: "ExpressJS",
     link: "https://expressjs.com/",
     icon: <SiExpress />,
-    color: "blue.600",
+    color: "gray.600",
   },
   {
     name: "Typescript",
     link: "https://www.typescriptlang.org/",
     icon: <SiTypescript />,
-    color: "blue.500",
+    color: "rgb(0, 122, 204)",
   },
   {
     name: "Redux",
     link: "https://redux.js.org/",
     icon: <SiRedux />,
-    color: "blue.600",
+    color: "rgb(118, 74, 188)",
   },
   {
     name: "NodeJS",
     link: "https://www.oracle.com/",
     icon: <SiNodedotjs />,
-    color: "red.500",
+    color: "rgb(60, 135, 58)",
   },
   {
     name: "MongoDB",
     link: "https://www.mongodb.com/",
     icon: <SiMongodb />,
-    color: "orange.500",
+    color: "rgb(77, 179, 61)",
   },
   {
     name: "WebScrapping",
@@ -87,7 +90,7 @@ export const SkillsList = [
     name: "Bootstrap",
     link: "https://chakra-ui.com/",
     icon: <SiBootstrap />,
-    color: "teal.400",
+    color: "blue.400",
   },
   {
     name: "Git",
@@ -96,15 +99,27 @@ export const SkillsList = [
     color: "red.500",
   },
   {
+    name: "Github",
+    link: "https://github.com/",
+    icon: <FaGithub />,
+    color: "teal.500",
+  },
+  {
     name: "Postman",
     link: "https://git-scm.com/",
     icon: <FaGitAlt />,
     color: "red.500",
   },
   {
+    name: "Heroku",
+    link: "https://devcenter.heroku.com/",
+    icon: <SiHeroku />,
+    color: "purple.600",
+  },
+  {
     name: "Data Structures and Algorithms",
     link: "#",
-    icon: <FaGitAlt />,
+    icon: <FaLaptopCode />,
     color: "red.500",
   },
 ];

@@ -1,29 +1,19 @@
-import { Box, Flex, Heading, Spacer, VStack } from "@chakra-ui/react";
+import { Box, Code, Flex, Spacer, VStack } from "@chakra-ui/react";
 import React from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import { EducationDetails, ExperienceDetails } from "../assets/data";
 import AboutCard from "../Components/AboutCard";
+import GithubCalendar from "../Components/GithubCalender";
 
 export default function About() {
   return (
     <Flex flexDir="column" h="100vh">
       <Navbar />
-      <Box w={["90%", "85%", "65%"]} m="auto" mt="10">
-        <Heading>
-          <Flex alignItems="center">
-            <Box
-              as="h1"
-              color="blue.600"
-              fontSize="3xl"
-              lineHeight="shorter"
-              fontWeight="bold"
-              textAlign="left"
-            >
-              Experience
-            </Box>
-          </Flex>
-        </Heading>
+      <Box w={["90%", "85%", "65%"]} m="auto" mt="5">
+        <Code colorScheme="orange" mb="1rem" fontSize="18px">
+          Experience
+        </Code>
         <VStack spacing="4" marginBottom="6" align="left" mx={[0, 0, 6]} mt="3">
           {ExperienceDetails.map((company, index) => (
             <AboutCard
@@ -38,20 +28,9 @@ export default function About() {
             />
           ))}
         </VStack>
-        <Heading>
-          <Flex alignItems="center">
-            <Box
-              as="h1"
-              color="blue.600"
-              fontSize="3xl"
-              lineHeight="shorter"
-              fontWeight="bold"
-              textAlign="left"
-            >
-              Education
-            </Box>
-          </Flex>
-        </Heading>
+        <Code colorScheme="blue" mb="1rem" fontSize="18px">
+          Education
+        </Code>
         <VStack spacing="4" marginBottom="6" align="left" mx={[0, 0, 6]} mt="3">
           {EducationDetails.map((e, index) => (
             <AboutCard
@@ -63,6 +42,7 @@ export default function About() {
             />
           ))}
         </VStack>
+        <GithubCalendar />
       </Box>
       <Spacer />
       <Footer />

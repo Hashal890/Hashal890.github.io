@@ -229,36 +229,6 @@ export const ProjectsList = [
     image:
       "https://as2.ftcdn.net/v2/jpg/03/50/73/39/1000_F_350733963_Tkud6iHBkLBkTDnbyNTBrVkcJBzbbyXv.jpg",
   },
-  {
-    title: "Weather App",
-    description:
-      "An basic weather application where you can get live weather information.",
-    techStack: ["HTML", "CSS", "JS"],
-    githubUrl: "https://github.com/Hashal890/Weather-App",
-    liveUrl: "https://weather-app-unit3.netlify.app/",
-    image:
-      "https://i.pinimg.com/originals/ab/96/a8/ab96a8d990b339f53202e32777481a63.png",
-  },
-  {
-    title: "Food App",
-    description:
-      "An basic food application where you can search for different recipies and also get top recipies.",
-    techStack: ["HTML", "CSS", "JS"],
-    githubUrl: "https://github.com/Hashal890/Food-App",
-    liveUrl: "https://food-app-unit3.netlify.app/",
-    image:
-      "https://cdn.shopify.com/s/files/1/0596/3717/0335/products/The-Winter-Roast-Kit_large.jpg?v=1642506525",
-  },
-  {
-    title: "Hotstar Searchbar",
-    description:
-      "An searchbar, where you can search for movies and also get trending movies.",
-    techStack: ["HTML", "CSS", "JS"],
-    githubUrl: "https://github.com/Hashal890/Hotstar-Search-Bar",
-    liveUrl: "https://hotstar-search-bar-unit3.netlify.app/",
-    image:
-      "https://malwaretips.com/blogs/wp-content/uploads/2018/02/Amazing-Movie-Search.jpg",
-  },
 ];
 
 export const EducationDetails = [

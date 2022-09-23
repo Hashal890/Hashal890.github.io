@@ -4,7 +4,6 @@ import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import { EducationDetails, ExperienceDetails } from "../assets/data";
 import AboutCard from "../Components/AboutCard";
-import GithubCalendar from "../Components/GithubCalender";
 
 export default function About() {
   return (
@@ -42,7 +41,6 @@ export default function About() {
             />
           ))}
         </VStack>
-        <GithubCalendar />
       </Box>
       <Spacer />
       <Footer />

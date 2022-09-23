@@ -6,7 +6,6 @@ export default function SkillsCard({ link, name, color, icon }) {
     <>
       <Link href={link}>
         <VStack
-          p="4"
           flexDirection="column"
           justifyContent="center"
           alignItems="center"

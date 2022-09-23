@@ -8,11 +8,11 @@ export default function GithubCalendar() {
     <Row
       style={{
         justifyContent: "center",
-        marginTop: "2rem",
-        paddingLeft: "0.5rem",
+        marginTop: "3rem",
+        marginBottom: "1rem",
       }}
     >
-      <Code colorScheme="green" mb="1rem" fontSize="18px">
+      <Code colorScheme="purple" mb="1rem" fontSize="18px">
         Github Calender
       </Code>
       <GitHubCalendar

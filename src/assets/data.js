@@ -218,7 +218,7 @@ export const ProjectsList = [
     liveUrl: "https://harshal-json-mock-server.herokuapp.com/",
     image: "https://guviblogs.files.wordpress.com/2014/08/database_server.jpg",
   },
-  
+
   {
     title: "Youtube App",
     description:
@@ -257,5 +257,28 @@ export const ExperienceDetails = [
       "Presentations",
     ],
     period: "October 2021 – February 2022",
+  },
+];
+
+export const Statistics = [
+  {
+    count: "1200+",
+    title: "Hours",
+    subject: "of Full Stack Coding",
+  },
+  {
+    count: "600+",
+    title: "DSA",
+    subject: "Problems",
+  },
+  {
+    count: "15+",
+    title: "Projects",
+    subject: "Done",
+  },
+  {
+    count: "100+",
+    title: "Hours",
+    subject: "of Soft Skills Sessions",
   },
 ];

@@ -11,7 +11,7 @@ export default function Skills() {
   return (
     <Flex flexDir="column" h="100vh">
       <Navbar />
-      <Box w="65%" m="auto">
+      <Box w={["95%", "80%", "70%"]} m="auto">
         <Code colorScheme="whatsapp" mb="0.25rem" mt="2rem" fontSize="18px">
           Skills
         </Code>

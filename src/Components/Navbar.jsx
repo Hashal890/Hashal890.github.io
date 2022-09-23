@@ -29,7 +29,15 @@ export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <div style={{ position: "sticky", top: "0", zIndex: "1000000" }}>
+    <div
+      style={{
+        position: "sticky",
+        top: "0",
+        zIndex: "1000000",
+        background: useColorModeValue("white", "black"),
+      }}
+      className="navbar"
+    >
       <Box
         borderBottomColor={useColorModeValue("white", "blue.900")}
         boxShadow="md"

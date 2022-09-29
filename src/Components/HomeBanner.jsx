@@ -104,6 +104,7 @@ export default function HomeBanner() {
             textDecoration: "none",
           }}
           _focus={{ outline: "none" }}
+          download={"Harshal_Pardeshi_Resume.pdf"}
         >
           RESUME
         </Button>

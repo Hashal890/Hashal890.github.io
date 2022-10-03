@@ -134,6 +134,25 @@ export const NavbarLinks = [
 
 export const ProjectsList = [
   {
+    title: "Betrix-24 Clone",
+    description:
+      "Bitrix24 is a united work space which handles the many aspects of daily operations & tasks. CRM, Project Management & Collaboration Platform for your business management. Cloud or on premise.",
+    techStack: [
+      "HTML",
+      "CSS",
+      "JS",
+      "ReactJS",
+      "ExpressJS",
+      "Redux",
+      "MongoDB",
+      "Chakra-UI",
+    ],
+    githubUrl: "https://github.com/Hashal890/gusty-cover-2254",
+    liveUrl: "https://betrix24-clone.vercel.app/",
+    image:
+      "https://yt3.ggpht.com/xJa0fL7XZOop5A5hfjz7vtxPzx5QVAbvXEOjLbSnqmCa0sRcXP1Uf0zJBDp14FPvnc6pkVNZ6Uc=s900-c-k-c0x00ffffff-no-rj",
+  },
+  {
     title: "Nature Basket Clone",
     description:
       "Nature’s Basket is India’s pioneering food destination present through physical retail stores, online portal and a mobile application.",
@@ -218,7 +237,6 @@ export const ProjectsList = [
     liveUrl: "https://harshal-json-mock-server.herokuapp.com/",
     image: "https://guviblogs.files.wordpress.com/2014/08/database_server.jpg",
   },
-
   {
     title: "Youtube App",
     description:

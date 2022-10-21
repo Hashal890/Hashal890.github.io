@@ -229,15 +229,6 @@ export const ProjectsList = [
       "https://img.freepik.com/free-vector/space-background-design_1300-145.jpg",
   },
   {
-    title: "Json Mock Server",
-    description:
-      "An api which contains some information which is avialable for everyone.",
-    techStack: ["HTML", "CSS", "JS", "Json Server", "Heroku"],
-    githubUrl: "https://github.com/Hashal890/Json-Mock-Server",
-    liveUrl: "https://harshal-json-mock-server.herokuapp.com/",
-    image: "https://guviblogs.files.wordpress.com/2014/08/database_server.jpg",
-  },
-  {
     title: "Youtube App",
     description:
       "An basic youtube application where you can search and watch videos.",

@@ -18,6 +18,8 @@ import {
   FaGithub,
   FaLaptopCode,
 } from "react-icons/fa";
+import { VscCode } from "react-icons/vsc";
+import { ImNpm } from "react-icons/im";
 
 export const SkillsList = [
   {
@@ -105,9 +107,21 @@ export const SkillsList = [
     color: "teal.500",
   },
   {
+    name: "NPM",
+    link: "https://www.npmjs.com/",
+    icon: <ImNpm />,
+    color: "red.400",
+  },
+  {
     name: "Postman",
     link: "https://git-scm.com/",
     icon: <FaGitAlt />,
+    color: "red.500",
+  },
+  {
+    name: "VS Code",
+    link: "https://code.visualstudio.com/",
+    icon: <VscCode />,
     color: "red.500",
   },
   {
@@ -118,7 +132,7 @@ export const SkillsList = [
   },
   {
     name: "Data Structures and Algorithms",
-    link: "#",
+    link: "https://www.geeksforgeeks.org/data-structures/",
     icon: <FaLaptopCode />,
     color: "red.500",
   },
@@ -134,7 +148,7 @@ export const NavbarLinks = [
 
 export const ProjectsList = [
   {
-    title: "Betrix-24 Clone",
+    title: "Bitrix-24 Clone",
     description:
       "Bitrix24 is a united work space which handles the many aspects of daily operations & tasks. CRM, Project Management & Collaboration Platform for your business management. Cloud or on premise.",
     techStack: [

@@ -9,6 +9,9 @@ export default function About() {
   return (
     <Flex flexDir="column" h="100vh">
       <Navbar />
+      <br />
+      <br />
+      <br />
       <Box w={["90%", "85%", "65%"]} m="auto" mt="5">
         <Code colorScheme="orange" mb="1rem" fontSize="18px">
           Experience

@@ -4,7 +4,7 @@ import React from "react";
 export default function SkillsCard({ link, name, color, icon }) {
   return (
     <>
-      <Link href={link}>
+      <a href={link} target="_blank" rel="noopener noreferrer">
         <VStack
           flexDirection="column"
           justifyContent="center"
@@ -33,7 +33,7 @@ export default function SkillsCard({ link, name, color, icon }) {
             {name}
           </Text>
         </VStack>
-      </Link>
+      </a>
     </>
   );
 }

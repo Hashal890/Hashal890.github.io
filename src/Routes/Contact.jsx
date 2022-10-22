@@ -17,6 +17,9 @@ export default function Contact() {
   return (
     <Flex flexDir="column" h="100vh">
       <Navbar />
+      <br />
+      <br />
+      <br />
       <Stack w={["85%", "70%", "50%"]} m="auto" mt="10">
         <Flex
           flexDirection={["column", "column", "column"]}

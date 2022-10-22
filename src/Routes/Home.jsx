@@ -8,6 +8,9 @@ export default function Home() {
   return (
     <Flex flexDir="column" h="100vh">
       <Navbar />
+      <br />
+      <br />
+      <br />
       <HomeBanner />
       <Spacer />
       <Footer />

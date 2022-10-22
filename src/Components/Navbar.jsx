@@ -31,10 +31,11 @@ export default function Navbar() {
   return (
     <div
       style={{
-        position: "sticky",
+        position: "fixed",
         top: "0",
-        zIndex: "1000000",
+        zIndex: "10000",
         background: useColorModeValue("white", "black"),
+        width: "100%",
       }}
       className="navbar"
     >
@@ -69,6 +70,13 @@ export default function Navbar() {
                 />
               ))}
             </HStack>
+            <a
+              href="https://drive.google.com/file/d/1eo6ZOSHSIb4brjK1_bmFpCNnZJNWavW6/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Resume
+            </a>
           </HStack>
           <HStack alignItems="center">
             <IconButton

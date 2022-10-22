@@ -69,7 +69,7 @@ export default function ProjectCard({
           </Text>
           <Spacer />
           <Flex m="auto" gap="1rem" alignItems="center">
-            <Link href={githubUrl}>
+            <a href={githubUrl}>
               <Button
                 leftIcon={<SiGithub />}
                 colorScheme="whatsapp"
@@ -80,8 +80,8 @@ export default function ProjectCard({
               >
                 View Code
               </Button>
-            </Link>
-            <Link href={liveUrl}>
+            </a>
+            <a href={liveUrl}>
               <Button
                 p="2"
                 fontSize="small"
@@ -92,7 +92,7 @@ export default function ProjectCard({
               >
                 View Deploy
               </Button>
-            </Link>
+            </a>
           </Flex>
         </Stack>
         <Image src={image} alt={title} w="30%" borderRadius="30px" />

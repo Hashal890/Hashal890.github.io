@@ -17,6 +17,9 @@ export default function Projects() {
   return (
     <Flex flexDir="column" h="100vh">
       <Navbar />
+      <br />
+      <br />
+      <br />
       <Box w={["97%", "97%", "80%"]} m="auto">
         <Tabs variant="soft-rounded" colorScheme="blue" align="center" w="100%">
           <TabPanels minHeight={"50vh"}>

@@ -8,6 +8,10 @@ import {
   SiTypescript,
   SiBootstrap,
   SiHeroku,
+  SiCanva,
+  SiNetlify,
+  SiVercel,
+  SiRailway,
 } from "react-icons/si";
 import {
   FaGitAlt,
@@ -95,6 +99,12 @@ export const SkillsList = [
     color: "blue.400",
   },
   {
+    name: "NPM",
+    link: "https://www.npmjs.com/",
+    icon: <ImNpm />,
+    color: "red.400",
+  },
+  {
     name: "Git",
     link: "https://git-scm.com/",
     icon: <FaGitAlt />,
@@ -107,10 +117,10 @@ export const SkillsList = [
     color: "teal.500",
   },
   {
-    name: "NPM",
-    link: "https://www.npmjs.com/",
-    icon: <ImNpm />,
-    color: "red.400",
+    name: "VS Code",
+    link: "https://code.visualstudio.com/",
+    icon: <VscCode />,
+    color: "red.500",
   },
   {
     name: "Postman",
@@ -119,16 +129,34 @@ export const SkillsList = [
     color: "red.500",
   },
   {
-    name: "VS Code",
-    link: "https://code.visualstudio.com/",
-    icon: <VscCode />,
-    color: "red.500",
-  },
-  {
     name: "Heroku",
     link: "https://devcenter.heroku.com/",
     icon: <SiHeroku />,
     color: "purple.600",
+  },
+  {
+    name: "Netlify",
+    link: "https://app.netlify.com/",
+    icon: <SiNetlify />,
+    color: "teal.600",
+  },
+  {
+    name: "Vercel",
+    link: "https://vercel.com/dashboard",
+    icon: <SiVercel />,
+    color: "teal.600",
+  },
+  {
+    name: "Railway",
+    link: "https://railway.app/dashboard",
+    icon: <SiRailway />,
+    color: "whiteAlpha.900",
+  },
+  {
+    name: "Canva",
+    link: "https://www.canva.com/",
+    icon: <SiCanva />,
+    color: "blue.500",
   },
   {
     name: "Data Structures and Algorithms",

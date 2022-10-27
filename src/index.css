@@ -15,10 +15,16 @@ code {
 ::-webkit-scrollbar {
   background-color: aqua;
   width: 4px;
+  scroll-behavior: smooth !important;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 1px;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: red;
+  border-radius: 1px;
 }
 
 ::-webkit-scrollbar-thumb:hover {

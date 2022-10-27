@@ -248,7 +248,7 @@ export const ProjectsList = [
     githubUrl: "https://github.com/Hashal890/Team-Kimayi",
     liveUrl: "https://kimaye-masai.netlify.app/",
     image:
-      "https://www.thespruce.com/thmb/mbyAoYkqn-y-pqASxWjz5NCEb4Q=/3530x3530/smart/filters:no_upscale()/june-fruit-drop-1403308-02-4f53df5c1caf40f197e8a8c619ded693.jpg",
+      "https://cdn.shopify.com/s/files/1/0449/5225/6667/collections/category-inage_270x.jpg?v=1659083246",
   },
   {
     title: "Star Wars Searchbar",

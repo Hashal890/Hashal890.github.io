@@ -64,7 +64,6 @@ export default function HomeBanner() {
           </Text>
           here
         </Heading>
-
         <Text
           pr={{ base: 0, md: 16 }}
           mb={4}
@@ -104,7 +103,7 @@ export default function HomeBanner() {
             textDecoration: "none",
           }}
           _focus={{ outline: "none" }}
-          download={"Harshal_Pardeshi_Resume.pdf"}
+          download={"Harshal Pardeshi Resume.pdf"}
         >
           RESUME
         </Button>

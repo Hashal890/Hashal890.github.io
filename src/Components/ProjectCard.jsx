@@ -7,7 +7,6 @@ import {
   Flex,
   Stack,
   Heading,
-  Link,
   Button,
   Spacer,
   Image,
@@ -69,7 +68,7 @@ export default function ProjectCard({
           </Text>
           <Spacer />
           <Flex m="auto" gap="1rem" alignItems="center">
-            <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+            <a href={githubUrl} target="_blank" rel="noreferrer">
               <Button
                 leftIcon={<SiGithub />}
                 colorScheme="whatsapp"
@@ -81,7 +80,7 @@ export default function ProjectCard({
                 View Code
               </Button>
             </a>
-            <a href={liveUrl} target="_blank" rel="noopener noreferrer">
+            <a href={liveUrl} target="_blank" rel="noreferrer">
               <Button
                 p="2"
                 fontSize="small"

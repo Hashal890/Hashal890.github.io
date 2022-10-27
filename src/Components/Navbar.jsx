@@ -22,6 +22,10 @@ const NavbarLinks = [
   { name: "Skills ", path: "/skills" },
   { name: "Projects", path: "/projects" },
   { name: "Contact", path: "/contact" },
+  {
+    name: "Resume",
+    path: "#",
+  },
 ];
 
 export default function Navbar() {
@@ -70,13 +74,6 @@ export default function Navbar() {
                 />
               ))}
             </HStack>
-            <a
-              href="https://drive.google.com/file/d/1eo6ZOSHSIb4brjK1_bmFpCNnZJNWavW6/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Resume
-            </a>
           </HStack>
           <HStack alignItems="center">
             <IconButton

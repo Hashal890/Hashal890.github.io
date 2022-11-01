@@ -12,7 +12,7 @@ import {
   Image,
 } from "@chakra-ui/react";
 import Profile from "../assets/profile_photo.jpg";
-import Resume from "../assets/Harshal_Pardeshi_Resume.pdf";
+import Resume from "../assets/Harshal Pardeshi Resume.pdf";
 import Typist from "react-typist";
 
 export default function HomeBanner() {

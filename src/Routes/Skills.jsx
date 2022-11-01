@@ -1,4 +1,4 @@
-import { Flex, Spacer, SimpleGrid, Box, Code } from "@chakra-ui/react";
+import { Flex, Spacer, SimpleGrid, Box, Code, Image } from "@chakra-ui/react";
 import React from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
@@ -32,6 +32,18 @@ export default function Skills() {
         <Code colorScheme="orange" mt="2rem" fontSize="18px">
           Statistics
         </Code>
+        <Flex mt={4} gap={4} justifyContent={"space-between"} flexWrap={"wrap"}>
+          <Image
+            src={
+              "https://github-readme-stats.vercel.app/api?username=Hashal890&theme=react&hide_border=false&include_all_commits=true&count_private=true"
+            }
+          />
+          <Image
+            src={
+              "https://github-readme-streak-stats.herokuapp.com/?user=Hashal890&theme=react&hide_border=false&include_all_commits=true&count_private=true"
+            }
+          />
+        </Flex>
         <SimpleGrid columns={[1, 2, 4]} spacing="4" mt="5" mb="5">
           {Statistics.map((skill, index) => (
             <StatisticsCard

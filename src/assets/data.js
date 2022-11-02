@@ -12,6 +12,8 @@ import {
   SiNetlify,
   SiVercel,
   SiRailway,
+  SiRedis,
+  SiAmazonaws,
 } from "react-icons/si";
 import {
   FaGitAlt,
@@ -24,6 +26,7 @@ import {
 } from "react-icons/fa";
 import { VscCode } from "react-icons/vsc";
 import { ImNpm } from "react-icons/im";
+import { TbBrandNextjs } from "react-icons/tb";
 
 export const SkillsList = [
   {
@@ -63,6 +66,12 @@ export const SkillsList = [
     color: "rgb(0, 122, 204)",
   },
   {
+    name: "NextJS",
+    link: "https://nextjs.org/",
+    icon: <TbBrandNextjs />,
+    color: "rgb(0, 0, 0)",
+  },
+  {
     name: "Redux",
     link: "https://redux.js.org/",
     icon: <SiRedux />,
@@ -79,6 +88,18 @@ export const SkillsList = [
     link: "https://www.mongodb.com/",
     icon: <SiMongodb />,
     color: "rgb(77, 179, 61)",
+  },
+  {
+    name: "Redis",
+    link: "https://redis.com/",
+    icon: <SiRedis />,
+    color: "rgb(216, 44, 32)",
+  },
+  {
+    name: "AWS",
+    link: "https://aws.amazon.com/",
+    icon: <SiAmazonaws />,
+    color: "#ec7211",
   },
   {
     name: "WebScrapping",

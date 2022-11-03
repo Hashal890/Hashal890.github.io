@@ -1,4 +1,11 @@
-import { Flex, Spacer, SimpleGrid, Box, Code, Image } from "@chakra-ui/react";
+import {
+  Flex,
+  Spacer,
+  SimpleGrid,
+  Box,
+  Code,
+  Image,
+} from "@chakra-ui/react";
 import React from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
@@ -18,7 +25,7 @@ export default function Skills() {
         <Code colorScheme="whatsapp" mb="0.25rem" mt="2rem" fontSize="18px">
           Skills
         </Code>
-        <SimpleGrid columns={[1, 2, 3]} spacing="4" mt="5" mb="5">
+        <SimpleGrid columns={[2, 3, 4]} spacing="4" mt="5" mb="5">
           {SkillsList.map((skill, index) => (
             <SkillsCard
               key={index + 1}
@@ -44,7 +51,7 @@ export default function Skills() {
             }
           />
         </Flex>
-        <SimpleGrid columns={[1, 2, 4]} spacing="4" mt="5" mb="5">
+        <SimpleGrid columns={[2, 2, 4]} spacing="4" mt="5" mb="5">
           {Statistics.map((skill, index) => (
             <StatisticsCard
               key={index + 1}

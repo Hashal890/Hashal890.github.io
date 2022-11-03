@@ -1,4 +1,4 @@
-import { Link, VStack, Image, Box, Text } from "@chakra-ui/react";
+import { VStack, Image, Box, Text } from "@chakra-ui/react";
 import React from "react";
 
 export default function SkillsCard({ link, name, color, icon }) {
@@ -29,7 +29,7 @@ export default function SkillsCard({ link, name, color, icon }) {
               {icon}
             </Box>
           )}
-          <Text fontSize="sm" pb="3">
+          <Text fontSize={["xs", "sm", "sm"]} pb="3" textAlign={"center"}>
             {name}
           </Text>
         </VStack>

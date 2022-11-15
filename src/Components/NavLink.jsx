@@ -10,7 +10,7 @@ export default function NavLink({ to, name, onClose, ...rest }) {
     <>
       {name === "Resume" ? (
         <a
-          href="https://drive.google.com/file/d/1eo6ZOSHSIb4brjK1_bmFpCNnZJNWavW6/view?usp=sharing"
+          href="https://drive.google.com/file/d/1pV8XBrEE6ZaN5BbITcfE215MNNCLl94z/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >

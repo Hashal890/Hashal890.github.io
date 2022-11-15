@@ -90,13 +90,13 @@ export default function HomeBanner() {
           </Code>
         </Text>
         <Flex gap={2}>
-          <Text color={"green.500"}>Phone Number ➠ </Text>
+          <Text color={"blue.500"}>Phone Number ➠ </Text>
           <Link href={"tel:+8329729568"} isExternal bg="transparent">
             +91 8329729568
           </Link>
         </Flex>
         <Flex gap={2} mb={5}>
-          <Text color={"green.500"}>Email-ID ➠ </Text>
+          <Text color={"blue.500"}>Email-ID ➠ </Text>
           <Link
             href={"mailto: pardeshiharshal90@gmail.com"}
             isExternal

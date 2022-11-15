@@ -89,6 +89,22 @@ export default function HomeBanner() {
             </Typist>
           </Code>
         </Text>
+        <Flex gap={2}>
+          <Text color={"green.500"}>Phone Number ➠ </Text>
+          <Link href={"tel:+8329729568"} isExternal bg="transparent">
+            +91 8329729568
+          </Link>
+        </Flex>
+        <Flex gap={2} mb={5}>
+          <Text color={"green.500"}>Email-ID ➠ </Text>
+          <Link
+            href={"mailto: pardeshiharshal90@gmail.com"}
+            isExternal
+            bg="transparent"
+          >
+            pardeshiharshal90@gmail.com
+          </Link>
+        </Flex>
         <Button
           as={Link}
           href={Resume}

@@ -1,4 +1,5 @@
 import {
+  Box,
   Code,
   Flex,
   IconButton,
@@ -7,11 +8,12 @@ import {
   Stack,
   Text,
   useColorModeValue,
+  WrapItem,
 } from "@chakra-ui/react";
 import React from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-import { FooterLinks } from "../Components/FooterLinks";
+import { ContactDetails } from "../assets/data";
 
 export default function Contact() {
   return (
@@ -49,22 +51,23 @@ export default function Contact() {
             alignItems="center"
             justifyContent="center"
             flexWrap="wrap"
+            gap={5}
           >
-            {FooterLinks.author.accounts.slice(0, 3).map((s, i) => (
-              <IconButton
-                key={i}
-                as={Link}
-                isExternal
-                href={s.url}
-                aria-label={s.name}
-                colorScheme={s.type}
-                icon={s.icon}
-                mx="10"
-                mb="10"
-                size={"lg"}
-                isRound={true}
-              />
-            ))}
+            {ContactDetails.map((c, index) => (
+							<Box key={`${index}-${c.link}`}>
+								<WrapItem>
+									<Link href={c.link} isExternal bg="transparent">
+										<IconButton
+											colorScheme="blue"
+											variant="outline"
+											aria-label="contact-button"
+											size="lg"
+											icon={<c.icon />}
+										/>
+									</Link>
+								</WrapItem>
+							</Box>
+						))}
           </Flex>
         </Flex>
       </Stack>

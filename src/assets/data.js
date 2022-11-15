@@ -27,6 +27,15 @@ import {
 import { VscCode } from "react-icons/vsc";
 import { ImNpm } from "react-icons/im";
 import { TbBrandNextjs } from "react-icons/tb";
+import {
+  BsTelephoneFill,
+  BsWhatsapp,
+  BsGithub,
+  BsLinkedin,
+  BsTwitter,
+  BsInstagram,
+} from "react-icons/bs";
+import { HiOutlineMail } from "react-icons/hi";
 
 export const SkillsList = [
   {
@@ -352,5 +361,33 @@ export const Statistics = [
     count: "100+",
     title: "Hours",
     subject: "of Soft Skills Sessions",
+  },
+];
+
+export const ContactDetails = [
+  { icon: BsTelephoneFill, link: "tel:+8329729568" },
+  {
+    icon: BsWhatsapp,
+    link: "https://api.whatsapp.com/send/?phone=8329729568&text=Hey+Harshal%21+I+just+checked+out+your+website%2C+and+I+would+love+to+discuss+about+a+project+with+you&app_absent=0&lang=en",
+  },
+  {
+    icon: BsGithub,
+    link: "https://github.com/hashal890",
+  },
+  {
+    icon: HiOutlineMail,
+    link: "mailto: pardeshiharshal90@gmail.com",
+  },
+  {
+    icon: BsLinkedin,
+    link: "https://www.linkedin.com/in/harshalpardeshi/",
+  },
+  {
+    icon: BsTwitter,
+    link: "https://twitter.com/harshal258/",
+  },
+  {
+    icon: BsInstagram,
+    link: "https://www.instagram.com/harshalpardeshi_hp/",
   },
 ];

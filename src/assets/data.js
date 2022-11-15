@@ -365,29 +365,35 @@ export const Statistics = [
 ];
 
 export const ContactDetails = [
-  { icon: BsTelephoneFill, link: "tel:+8329729568" },
+  { icon: BsTelephoneFill, link: "tel:+8329729568", name: "+91 8329729568" },
   {
     icon: BsWhatsapp,
     link: "https://api.whatsapp.com/send/?phone=8329729568&text=Hey+Harshal%21+I+just+checked+out+your+website%2C+and+I+would+love+to+discuss+about+a+project+with+you&app_absent=0&lang=en",
+    name: "+91 8329729568",
   },
   {
     icon: BsGithub,
     link: "https://github.com/hashal890",
+    name: "hashal890",
   },
   {
     icon: HiOutlineMail,
     link: "mailto: pardeshiharshal90@gmail.com",
+    name: "pardeshiharshal90@gmail.com",
   },
   {
     icon: BsLinkedin,
     link: "https://www.linkedin.com/in/harshalpardeshi/",
+    name: "harshalpardeshi",
   },
   {
     icon: BsTwitter,
     link: "https://twitter.com/harshal258/",
+    name: "harshal258",
   },
   {
     icon: BsInstagram,
     link: "https://www.instagram.com/harshalpardeshi_hp/",
+    name: "harshalpardeshi_hp",
   },
 ];

@@ -1,14 +1,16 @@
 import {
-  Box,
   Code,
   Flex,
   IconButton,
   Link,
   Spacer,
   Stack,
+  Table,
+  Tbody,
+  Td,
   Text,
+  Tr,
   useColorModeValue,
-  WrapItem,
 } from "@chakra-ui/react";
 import React from "react";
 import Navbar from "../Components/Navbar";
@@ -39,36 +41,37 @@ export default function Contact() {
             fontSize="20"
             color={useColorModeValue("gray.800", "gray.500")}
             textAlign="center"
+            mb={10}
           >
             My inbox is always open, whether you have a question or just want to
             know me or even just to say hi , I'll try my best to get back to{" "}
             <Code colorScheme="orange">you! 😊</Code>
           </Text>
-          <Flex
-            fontSize="20"
-            mt="20"
-            color={useColorModeValue("gray.800", "gray.500")}
-            alignItems="center"
-            justifyContent="center"
-            flexWrap="wrap"
-            gap={5}
-          >
-            {ContactDetails.map((c, index) => (
-							<Box key={`${index}-${c.link}`}>
-								<WrapItem>
-									<Link href={c.link} isExternal bg="transparent">
-										<IconButton
-											colorScheme="blue"
-											variant="outline"
-											aria-label="contact-button"
-											size="lg"
-											icon={<c.icon />}
-										/>
-									</Link>
-								</WrapItem>
-							</Box>
-						))}
-          </Flex>
+          <Table maxW={"400px"} m={"auto"}>
+            <Tbody>
+              {ContactDetails.map((c, index) => (
+                <Tr key={`${index}-${c.link}`}>
+                  <Link href={c.link} isExternal bg="transparent">
+                    <Flex>
+                      <Td>
+                        <IconButton
+                          colorScheme="blue"
+                          variant="outline"
+                          aria-label="contact-button"
+                          size="lg"
+                          icon={<c.icon />}
+                        />
+                      </Td>
+                      <Spacer />
+                      <Td>
+                        <Text>{c.name}</Text>
+                      </Td>
+                    </Flex>
+                  </Link>
+                </Tr>
+              ))}
+            </Tbody>
+          </Table>
         </Flex>
       </Stack>
       <Spacer />

@@ -5,11 +5,11 @@ import {
   Link,
   Spacer,
   Stack,
-  Table,
-  Tbody,
-  Td,
+  // Table,
+  // Tbody,
+  // Td,
+  // Tr,
   Text,
-  Tr,
   useColorModeValue,
 } from "@chakra-ui/react";
 import React from "react";
@@ -47,7 +47,20 @@ export default function Contact() {
             know me or even just to say hi , I'll try my best to get back to{" "}
             <Code colorScheme="orange">you! 😊</Code>
           </Text>
-          <Table maxW={"400px"} m={"auto"}>
+          <Flex gap={3}>
+            {ContactDetails.map((c, ind) => (
+              <Link key={ind} href={c.link} isExternal bg="transparent">
+                <IconButton
+                  colorScheme="blue"
+                  variant="outline"
+                  aria-label="contact-button"
+                  size="lg"
+                  icon={<c.icon />}
+                />
+              </Link>
+            ))}
+          </Flex>
+          {/* <Table maxW={"400px"} m={"auto"}>
             <Tbody>
               {ContactDetails.map((c, index) => (
                 <Tr key={`${index}-${c.link}`}>
@@ -71,7 +84,7 @@ export default function Contact() {
                 </Tr>
               ))}
             </Tbody>
-          </Table>
+          </Table> */}
         </Flex>
       </Stack>
       <Spacer />

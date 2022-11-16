@@ -206,6 +206,26 @@ export const NavbarLinks = [
 
 export const ProjectsList = [
   {
+    title: "Yoox Clone",
+    description:
+      "Yoox Net-a-Porter is home to the world’s leading online luxury, fashion and style destinations. They are four multi-brand online stores names as Net-a-Porter, Mr Porter, the Outnet and Yoox.",
+    techStack: [
+      "HTML",
+      "CSS",
+      "JS",
+      "NextJS",
+      "ExpressJS",
+      "Redis",
+      "Json web token",
+      "Razorpay",
+      "Chakra-UI",
+    ],
+    githubUrl: "https://github.com/Hashal890/Exclusive-Yoox-Clone",
+    liveUrl: "https://yoox-clone-by-exclusive.vercel.app/",
+    image:
+      "https://github.com/Hashal890/Exclusive-Yoox-Clone/raw/main/assets/mensProductsPage.png",
+  },
+  {
     title: "Bitrix-24 Clone",
     description:
       "Bitrix24 is a united work space which handles the many aspects of daily operations & tasks. CRM, Project Management & Collaboration Platform for your business management. Cloud or on premise.",
@@ -222,7 +242,7 @@ export const ProjectsList = [
     githubUrl: "https://github.com/Hashal890/gusty-cover-2254",
     liveUrl: "https://betrix24-clone.vercel.app/",
     image:
-      "https://yt3.ggpht.com/xJa0fL7XZOop5A5hfjz7vtxPzx5QVAbvXEOjLbSnqmCa0sRcXP1Uf0zJBDp14FPvnc6pkVNZ6Uc=s900-c-k-c0x00ffffff-no-rj",
+      "https://github.com/Hashal890/Bitrix24-Clone/raw/main/frontend/src/assets/homePage.png",
   },
   {
     title: "Nature Basket Clone",
@@ -240,7 +260,7 @@ export const ProjectsList = [
     githubUrl: "https://github.com/Hashal890/stark-meeting-6715",
     liveUrl: "https://naturesbasketclone.vercel.app/",
     image:
-      "https://3.imimg.com/data3/EK/AQ/GLADMIN-69208/food-basket-500x500.jpg",
+      "https://github.com/Hashal890/Nature-Basket-Clone/raw/main/src/Assets/homePage.png",
   },
   {
     title: "Zoom Car Clone",
@@ -250,7 +270,7 @@ export const ProjectsList = [
     githubUrl: "https://github.com/Hashal890/educated-earth-4277",
     liveUrl: "https://zoomcarclone.vercel.app/",
     image:
-      "https://zoomcar-assets.zoomcar.com/images/original/207f2f9653395ea8b5b5acf04cd722aa1b88b0f0.png?1661344619",
+      "https://github.com/Hashal890/Zoom-Car-Clone/raw/main/src/Assets/homePage.png",
   },
   {
     title: "Dot & Key Clone",
@@ -268,7 +288,7 @@ export const ProjectsList = [
     githubUrl: "https://github.com/Hashal890/dot-key-clone",
     liveUrl: "https://dotandkeyclone.netlify.app/",
     image:
-      "https://img.buzzfeed.com/buzzfeed-static/static/2020-05/14/19/asset/0329e3af71dc/sub-buzz-298-1589485926-2.png?downsize=700%3A%2A&output-quality=auto&output-format=auto",
+      "https://github.com/Hashal890/dot-key-clone/raw/main/assets/homePage.png",
   },
   {
     title: "Kimaye Clone",
@@ -278,7 +298,7 @@ export const ProjectsList = [
     githubUrl: "https://github.com/Hashal890/Team-Kimayi",
     liveUrl: "https://kimaye-masai.netlify.app/",
     image:
-      "https://cdn.shopify.com/s/files/1/0449/5225/6667/collections/category-inage_270x.jpg?v=1659083246",
+      "https://github.com/Hashal890/Kimaye-Clone/raw/main/assets/homePage.png",
   },
   {
     title: "Star Wars Searchbar",
@@ -288,7 +308,7 @@ export const ProjectsList = [
     githubUrl: "https://github.com/Hashal890/Star-Wars",
     liveUrl: "https://star-wars-unit3.netlify.app/",
     image:
-      "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/star-wars-characters-ranked-1577122930.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*",
+      "https://github.com/Hashal890/Star-Wars/raw/main/assets/searchResults.png",
   },
   {
     title: "Space Tourism Website",
@@ -298,7 +318,7 @@ export const ProjectsList = [
     githubUrl: "https://github.com/Hashal890/Space-tourism-website",
     liveUrl: "https://space-tourism-123.netlify.app/",
     image:
-      "https://img.freepik.com/free-vector/space-background-design_1300-145.jpg",
+      "https://github.com/Hashal890/Space-tourism-website/raw/main/assets/solution/homePage.png",
   },
   {
     title: "Youtube App",
@@ -308,7 +328,17 @@ export const ProjectsList = [
     githubUrl: "https://github.com/Hashal890/Youtube-App",
     liveUrl: "https://youtube-app-unit3.netlify.app/",
     image:
-      "https://as2.ftcdn.net/v2/jpg/03/50/73/39/1000_F_350733963_Tkud6iHBkLBkTDnbyNTBrVkcJBzbbyXv.jpg",
+      "https://github.com/Hashal890/Youtube-App/raw/main/assets/searchResults.png",
+  },
+  {
+    title: "Weather App",
+    description:
+      "An basic weather application where you can search and get weather of that city. You can also get weather by live location.",
+    techStack: ["HTML", "CSS", "JS"],
+    githubUrl: "https://github.com/Hashal890/Weather-App",
+    liveUrl: "https://weather-app-unit3.netlify.app/",
+    image:
+      "https://github.com/Hashal890/Weather-App/raw/main/assets/homeOnePage.png",
   },
 ];
 

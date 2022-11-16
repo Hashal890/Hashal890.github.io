@@ -10,6 +10,8 @@ import {
   Button,
   Spacer,
   Image,
+  VStack,
+  Spinner,
 } from "@chakra-ui/react";
 import { FaGithubAlt } from "react-icons/fa";
 import { SiGithub } from "react-icons/si";
@@ -27,15 +29,36 @@ export default function ProjectCard({
     <Box
       px="4"
       py="5"
-      borderWidth="1px"
-      borderColor="gray.200"
+      borderWidth="2px"
+      borderColor="gray.400"
       _hover={{ shadow: "lg" }}
       bg={useColorModeValue("white", "gray.700")}
       position="relative"
       rounded="md"
     >
-      <Flex justifyContent="space-between" alignItems="start">
-        <Stack spacing="1" pl="3" align="left" w="55%">
+      <VStack justifyContent="space-between" alignItems="start">
+        <Image
+          src={image}
+          alt={title}
+          borderRadius="5px"
+          m={"auto"}
+          fallbackSrc={
+            <Spinner
+              thickness="4px"
+              speed="0.65s"
+              emptyColor="gray.200"
+              color="blue.500"
+              size="4xl"
+            />
+          }
+        />
+        <Stack
+          spacing="1"
+          pl="3"
+          align="left"
+          pt={5}
+          borderTop={"1px solid gray"}
+        >
           <Flex gap="1rem" align="center">
             <FaGithubAlt />
             <Heading
@@ -94,8 +117,7 @@ export default function ProjectCard({
             </a>
           </Flex>
         </Stack>
-        <Image src={image} alt={title} w="30%" borderRadius="30px" />
-      </Flex>
+      </VStack>
     </Box>
   );
 }

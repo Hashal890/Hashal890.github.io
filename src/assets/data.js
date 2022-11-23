@@ -206,7 +206,7 @@ export const NavbarLinks = [
 
 export const ProjectsList = [
   {
-    title: "Yoox Clone",
+    title: "Exclusive Website(Yoox Clone)",
     description:
       "Yoox Net-a-Porter is home to the world’s leading online luxury, fashion and style destinations. They are four multi-brand online stores names as Net-a-Porter, Mr Porter, the Outnet and Yoox.",
     techStack: [
@@ -378,7 +378,7 @@ export const Statistics = [
     subject: "of Full Stack Coding",
   },
   {
-    count: "600+",
+    count: "800+",
     title: "DSA",
     subject: "Problems",
   },

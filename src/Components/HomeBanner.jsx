@@ -82,7 +82,7 @@ export default function HomeBanner() {
           textAlign="start"
           fontFamily="body"
         >
-          An <Code colorScheme="green">FULL STACK WEB DEVELOPER</Code> graduated
+          A <Code colorScheme="green">FULL STACK WEB DEVELOPER</Code> graduated
           from <Code colorScheme="linkedin"> Masai School </Code> having{" "}
           <Code colorScheme="pink">1200+ hours</Code> coding experience and
           solved <Code colorScheme="pink">800+ </Code> dsa problems. Seek to

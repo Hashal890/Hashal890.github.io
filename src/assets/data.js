@@ -340,6 +340,26 @@ export const ProjectsList = [
     image:
       "https://github.com/Hashal890/Weather-App/raw/main/assets/homeOnePage.png",
   },
+  {
+    title: "Teerex Store",
+    description:
+      "It is a simple webapp where customers can browse through the catalog of t-shirts, add t-shirts to the shopping cart and checkout the items in the cart.",
+    techStack: ["HTML", "CSS", "JS", "ReactJS", "Chakra-UI", "Context API"],
+    githubUrl: "https://github.com/Hashal890/TeeRex-Store",
+    liveUrl: "https://teerexstore.vercel.app/",
+    image:
+      "https://github.com/Hashal890/Youtube-App/raw/main/assets/teerex-store.png",
+  },
+  {
+    title: "Food App",
+    description:
+      "An basic food application where you can search and get recipie of that food. You can also get random recipies and recipie of the day.",
+    techStack: ["HTML", "CSS", "JS", "Debouncing"],
+    githubUrl: "https://github.com/Hashal890/Food-App",
+    liveUrl: "https://weather-app-unit3.netlify.app/",
+    image:
+      "https://github.com/Hashal890/Weather-App/raw/main/assets/food-app.png",
+  },
 ];
 
 export const EducationDetails = [
@@ -383,7 +403,7 @@ export const Statistics = [
     subject: "Problems",
   },
   {
-    count: "15+",
+    count: "20+",
     title: "Projects",
     subject: "Done",
   },
@@ -421,9 +441,9 @@ export const ContactDetails = [
     link: "https://twitter.com/harshal258/",
     name: "harshal258",
   },
-  {
-    icon: BsInstagram,
-    link: "https://www.instagram.com/harshalpardeshi_hp/",
-    name: "harshalpardeshi_hp",
-  },
+  // {
+  //   icon: BsInstagram,
+  //   link: "https://www.instagram.com/harshalpardeshi_hp/",
+  //   name: "harshalpardeshi_hp",
+  // },
 ];

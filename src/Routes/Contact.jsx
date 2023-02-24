@@ -45,7 +45,9 @@ export default function Contact() {
           >
             My inbox is always open, whether you have a question or just want to
             know me or even just to say hi , I'll try my best to get back to{" "}
-            <Code colorScheme="orange">you! 😊</Code>
+            <Code colorScheme="orange">you! </Code>
+            <Text> Mobile Number: +918329729568</Text>
+            <Text>Email-ID: pardeshiharshal90@gmail.com</Text>
           </Text>
           <Flex gap={3}>
             {ContactDetails.map((c, ind) => (

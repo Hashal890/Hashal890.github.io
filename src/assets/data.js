@@ -301,6 +301,46 @@ export const ProjectsList = [
       "https://github.com/Hashal890/Kimaye-Clone/raw/main/assets/homePage.png",
   },
   {
+    title: "Recipe Book",
+    description:
+      "It is a simple webapp where you can browse through the different recipes and also add them to your save library.",
+    techStack: [
+      "HTML",
+      "CSS",
+      "JS",
+      "ReactJS",
+      "Redux",
+      "Redux Thunk",
+      "Axios",
+      "Chakra-UI",
+      "React Icons",
+    ],
+    githubUrl: "https://github.com/Hashal890/recipe-book",
+    liveUrl: "https://recipe-book-rosy.vercel.app/",
+    image:
+      "https://github.com/Hashal890/recipe-book/raw/main/src/assets/homePage.png",
+  },
+  {
+    title: "Teerex Store",
+    description:
+      "It is a simple webapp where customers can browse through the catalog of t-shirts, add t-shirts to the shopping cart and checkout the items in the cart.",
+    techStack: ["HTML", "CSS", "JS", "ReactJS", "Chakra-UI", "Context API"],
+    githubUrl: "https://github.com/Hashal890/TeeRex-Store",
+    liveUrl: "https://teerexstore.vercel.app/",
+    image:
+      "https://github.com/Hashal890/TeeRex-Store/raw/main/src/Assets/homePage.png",
+  },
+  {
+    title: "Youtube App",
+    description:
+      "An basic youtube application where you can search and watch videos.",
+    techStack: ["HTML", "CSS", "JS"],
+    githubUrl: "https://github.com/Hashal890/Youtube-App",
+    liveUrl: "https://youtube-app-unit3.netlify.app/",
+    image:
+      "https://github.com/Hashal890/Youtube-App/raw/main/assets/searchResults.png",
+  },
+  {
     title: "Star Wars Searchbar",
     description:
       "An searchbar, where you can search for characters of the Star Wars.",
@@ -321,16 +361,6 @@ export const ProjectsList = [
       "https://github.com/Hashal890/Space-tourism-website/raw/main/assets/solution/homePage.png",
   },
   {
-    title: "Youtube App",
-    description:
-      "An basic youtube application where you can search and watch videos.",
-    techStack: ["HTML", "CSS", "JS"],
-    githubUrl: "https://github.com/Hashal890/Youtube-App",
-    liveUrl: "https://youtube-app-unit3.netlify.app/",
-    image:
-      "https://github.com/Hashal890/Youtube-App/raw/main/assets/searchResults.png",
-  },
-  {
     title: "Weather App",
     description:
       "An basic weather application where you can search and get weather of that city. You can also get weather by live location.",
@@ -341,25 +371,25 @@ export const ProjectsList = [
       "https://github.com/Hashal890/Weather-App/raw/main/assets/homeOnePage.png",
   },
   {
-    title: "Teerex Store",
-    description:
-      "It is a simple webapp where customers can browse through the catalog of t-shirts, add t-shirts to the shopping cart and checkout the items in the cart.",
-    techStack: ["HTML", "CSS", "JS", "ReactJS", "Chakra-UI", "Context API"],
-    githubUrl: "https://github.com/Hashal890/TeeRex-Store",
-    liveUrl: "https://teerexstore.vercel.app/",
-    image:
-      "https://github.com/Hashal890/Youtube-App/raw/main/assets/teerex-store.png",
-  },
-  {
     title: "Food App",
     description:
       "An basic food application where you can search and get recipie of that food. You can also get random recipies and recipie of the day.",
     techStack: ["HTML", "CSS", "JS", "Debouncing"],
     githubUrl: "https://github.com/Hashal890/Food-App",
-    liveUrl: "https://weather-app-unit3.netlify.app/",
+    liveUrl: "https://food-app-unit3.netlify.app/",
     image:
-      "https://github.com/Hashal890/Weather-App/raw/main/assets/food-app.png",
+      "https://github.com/Hashal890/Food-App/raw/main/assets/recipieOfDay.png",
   },
+  {
+    title: "Movies Search Bar",
+    description:
+      "An basic search bar where you can search different movies and get more information about them. Here you can also get popular movies information.",
+    techStack: ["HTML", "CSS", "JS"],
+    githubUrl: "https://github.com/Hashal890/Hotstar-Search-Bar",
+    liveUrl: "https://hotstar-search-bar-unit3.netlify.app/",
+    image:
+      "https://github.com/Hashal890/Hotstar-Search-Bar/raw/main/assets/trendingMovies.png",
+  }
 ];
 
 export const EducationDetails = [

@@ -15,16 +15,18 @@ export default function StatisticsCard({ count, title, subject }) {
         rounded={"xl"}
         _hover={{ shadow: "md" }}
         p={"10"}
+        pb={"20"}
+        pt={"20"}
       >
         <Code
-          fontSize={["xl", "2xl", "3xl"]}
+          fontSize={["xl", "2xl"]}
           borderRadius="30px"
           colorScheme="pink"
         >
           {count}
         </Code>
         <Text
-          fontSize={["sm", "md", "xl"]}
+          fontSize={["sm", "md"]}
           textAlign={"center"}
           fontWeight={500}
         >

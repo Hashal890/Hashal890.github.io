@@ -1,5 +1,4 @@
 import {
-  Code,
   Flex,
   IconButton,
   Link,
@@ -35,7 +34,7 @@ export default function Contact() {
             fontSize="28"
             mb="10"
           >
-            Get In Touch
+            Let's chat!
           </Text>
           <Text
             fontSize="20"
@@ -43,10 +42,9 @@ export default function Contact() {
             textAlign="center"
             mb={10}
           >
-            My inbox is always open, whether you have a question or just want to
-            know me or even just to say hi , I'll try my best to get back to{" "}
-            <Code colorScheme="orange">you! </Code>
-            <Text> Mobile Number: +918329729568</Text>
+            I'd love to hear from you! Feel free to reach out using the
+            following methods for any inquiries or collaborations.
+            <Text mt={4}> Mobile Number: +918329729568</Text>
             <Text>Email-ID: pardeshiharshal90@gmail.com</Text>
           </Text>
           <Flex gap={3}>

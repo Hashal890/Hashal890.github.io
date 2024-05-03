@@ -36,6 +36,7 @@ import {
   BsInstagram,
 } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
+import { Image } from "@chakra-ui/react";
 
 export const SkillsList = [
   {
@@ -192,6 +193,21 @@ export const SkillsList = [
     name: "Data Structures and Algorithms",
     link: "https://www.geeksforgeeks.org/data-structures/",
     icon: <FaLaptopCode />,
+    color: "red.500",
+  },
+  {
+    name: "ChatGPT",
+    link: "https://chat.openai.com/",
+    icon: (
+      <Image
+        src={
+          "https://cdn.oaistatic.com/_next/static/media/apple-touch-icon.59f2e898.png"
+        }
+        w={"28px"}
+        h={"28px"}
+        borderRadius={"100%"}
+      />
+    ),
     color: "red.500",
   },
 ];
@@ -389,35 +405,66 @@ export const ProjectsList = [
     liveUrl: "https://hotstar-search-bar-unit3.netlify.app/",
     image:
       "https://github.com/Hashal890/Hotstar-Search-Bar/raw/main/assets/trendingMovies.png",
-  }
+  },
 ];
 
 export const EducationDetails = [
   {
+    title: "Birla Institute of Technology and Science, Pilani",
+    role: "Bachelor in Computer Science",
+    skills: [],
+    period: "Jul 2023 – Present",
+  },
+  {
     title: "Masai School, Bangalore",
     role: "Full Stack Web Development",
     skills: [],
-    period: "March 2022 – Present",
+    period: "Mar 2022 – Nov 2022",
   },
   {
     title: "Government Polytechnic, Nashik",
     role: "Diploma in Mechanical Engineering",
-    skills: ["8.8 GPA"],
-    period: "2018 – 2021",
+    skills: ["8.4 GPA"],
+    period: "Aug 2018 – Sep 2021",
   },
 ];
 
 export const ExperienceDetails = [
   {
-    title: "Supervisor",
-    role: "Mechanical Engineer Intern",
+    title: "Internship",
+    role: "Full Stack Web Developer",
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "React.JS",
+      "Node.JS",
+      "Express.JS",
+      "Next.JS",
+      "Redux",
+      "Context API",
+      "MongoDB",
+      "Rest API",
+      "Web Scraping",
+      "Chakra-UI",
+      "Material UI",
+      "Bootstrap",
+      "Git",
+      "Figma",
+    ],
+    period: "Mar 2022 - Nov 2022",
+  },
+  {
+    title: "Internship",
+    role: "Supervisor",
     skills: [
       "Leadership",
       "Team Collaboration",
       "Problem Solving",
       "Presentations",
     ],
-    period: "October 2021 – February 2022",
+    period: "Sep 2021 – Mar 2022",
   },
 ];
 
@@ -466,11 +513,11 @@ export const ContactDetails = [
     link: "https://www.linkedin.com/in/harshalpardeshi/",
     name: "harshalpardeshi",
   },
-  {
-    icon: BsTwitter,
-    link: "https://twitter.com/harshal258/",
-    name: "harshal258",
-  },
+  // {
+  //   icon: BsTwitter,
+  //   link: "https://twitter.com/harshal258/",
+  //   name: "harshal258",
+  // },
   // {
   //   icon: BsInstagram,
   //   link: "https://www.instagram.com/harshalpardeshi_hp/",

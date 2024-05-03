@@ -13,6 +13,7 @@ export default function Footer() {
       align="center"
       justify="center"
       p={6}
+      textAlign="center"
     >
       <chakra.p
         py={{

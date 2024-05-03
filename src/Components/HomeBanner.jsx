@@ -13,7 +13,7 @@ import {
 } from "@chakra-ui/react";
 import Profile from "../assets/profile_photo.jpg";
 import Resume from "../assets/Harshal Pardeshi Resume.pdf";
-import Typist from "react-typist";
+import { IoMdDownload } from "react-icons/io";
 
 export default function HomeBanner() {
   return (
@@ -82,22 +82,35 @@ export default function HomeBanner() {
           textAlign="start"
           fontFamily="body"
         >
-          A <Code colorScheme="green">FULL STACK WEB DEVELOPER</Code> graduated
-          from <Code colorScheme="linkedin"> Masai School </Code> having{" "}
-          <Code colorScheme="pink">1200+ hours</Code> coding experience and
-          solved <Code colorScheme="pink">800+ </Code> dsa problems. Seek to
-          join the tech industry to develop my technical skills and
-          interpersonal skills.
+          <span>
+            A <Code colorScheme="green">FULL STACK WEB DEVELOPER</Code> with a
+            total of 2 years and 7 months of hands-on experience in full-stack
+            web development. This includes 7 months from Masai School and an
+            additional 2 years of personal project building on both frontend and
+            backend technologies. Currently pursuing my B.Sc. in Computer
+            Science from BITS Pilani, I am ready to relocate for the right
+            opportunity. Passionate about leveraging technology to solve
+            real-world problems, I am driven by a love for coding and a
+            commitment to continuous learning.
+          </span>
           <br />
           <br />
-          <Code animation="infinite" fontSize="xl">
-            <Typist>
-              I code <Code colorScheme="messenger"> beautifully</Code>{" "}
-              <Code colorScheme="yellow"> simple</Code> things and I{" "}
-              <Code colorScheme="red"> love </Code> what I do!
-            </Typist>
-          </Code>
+          <span>
+            My portfolio reflects my expertise in HTML, CSS, JavaScript,
+            TypeScript, React.JS, Node.JS, Express.JS, Next.JS, Redux, Context
+            API, MongoDB, and Rest API. Additionally, I have experience with Web
+            Scraping and am adept with tools like Chakra-UI, Bootstrap, Git, and
+            Figma.
+          </span>
+          <br />
+          <br />
+          <span>
+            I thrive in challenging environments that push me to innovate and
+            grow, aspiring to contribute to groundbreaking projects and create
+            solutions that make a meaningful impact.
+          </span>
         </Text>
+        <br />
         <Button
           as={Link}
           href={Resume}
@@ -113,8 +126,9 @@ export default function HomeBanner() {
           }}
           _focus={{ outline: "none" }}
           download={"Harshal Pardeshi Resume.pdf"}
+          leftIcon={<IoMdDownload />}
         >
-          RESUME
+          Resume
         </Button>
       </Box>
       <Image

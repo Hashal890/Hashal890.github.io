@@ -302,7 +302,7 @@ export const ProjectsList = [
       "Jquery",
     ],
     githubUrl: "https://github.com/Hashal890/dot-key-clone",
-    liveUrl: "https://dotandkeyclone.netlify.app/",
+    liveUrl: "https://dot-and-key-website-clone-project.netlify.app/",
     image:
       "https://github.com/Hashal890/dot-key-clone/raw/main/assets/homePage.png",
   },
@@ -312,7 +312,7 @@ export const ProjectsList = [
       "Consistently delivering the safest and highest-quality fruits at your doorstep. Our roots lie in the principles of cooperation and partnership.",
     techStack: ["HTML", "CSS", "JS", "Bootstrap"],
     githubUrl: "https://github.com/Hashal890/Team-Kimayi",
-    liveUrl: "https://kimaye-masai.netlify.app/",
+    liveUrl: "https://kimaye-website-clone-project.netlify.app/",
     image:
       "https://github.com/Hashal890/Kimaye-Clone/raw/main/assets/homePage.png",
   },
@@ -352,17 +352,17 @@ export const ProjectsList = [
       "An basic youtube application where you can search and watch videos.",
     techStack: ["HTML", "CSS", "JS"],
     githubUrl: "https://github.com/Hashal890/Youtube-App",
-    liveUrl: "https://youtube-app-unit3.netlify.app/",
+    liveUrl: "https://youtube-webapp-project.netlify.app/",
     image:
       "https://github.com/Hashal890/Youtube-App/raw/main/assets/searchResults.png",
   },
   {
-    title: "Star Wars Searchbar",
+    title: "Star Wars Characters Information",
     description:
       "An searchbar, where you can search for characters of the Star Wars.",
     techStack: ["HTML", "CSS", "JS"],
     githubUrl: "https://github.com/Hashal890/Star-Wars",
-    liveUrl: "https://star-wars-unit3.netlify.app/",
+    liveUrl: "https://star-wars-characters-information.netlify.app/",
     image:
       "https://github.com/Hashal890/Star-Wars/raw/main/assets/searchResults.png",
   },
@@ -370,9 +370,9 @@ export const ProjectsList = [
     title: "Space Tourism Website",
     description:
       "Website that takes you to some planets like moon, mars, europa and titan.",
-    techStack: ["HTML", "CSS", "JS", "Bootstrap"],
+    techStack: ["HTML", "CSS", "JS"],
     githubUrl: "https://github.com/Hashal890/Space-tourism-website",
-    liveUrl: "https://space-tourism-123.netlify.app/",
+    liveUrl: "https://space-tourism-website-projectt.netlify.app/",
     image:
       "https://github.com/Hashal890/Space-tourism-website/raw/main/assets/solution/homePage.png",
   },
@@ -382,7 +382,7 @@ export const ProjectsList = [
       "An basic weather application where you can search and get weather of that city. You can also get weather by live location.",
     techStack: ["HTML", "CSS", "JS"],
     githubUrl: "https://github.com/Hashal890/Weather-App",
-    liveUrl: "https://weather-app-unit3.netlify.app/",
+    liveUrl: "https://weather-webapp-project.netlify.app/",
     image:
       "https://github.com/Hashal890/Weather-App/raw/main/assets/homeOnePage.png",
   },
@@ -392,7 +392,7 @@ export const ProjectsList = [
       "An basic food application where you can search and get recipie of that food. You can also get random recipies and recipie of the day.",
     techStack: ["HTML", "CSS", "JS", "Debouncing"],
     githubUrl: "https://github.com/Hashal890/Food-App",
-    liveUrl: "https://food-app-unit3.netlify.app/",
+    liveUrl: "https://food-web-app-project.netlify.app/",
     image:
       "https://github.com/Hashal890/Food-App/raw/main/assets/recipieOfDay.png",
   },
@@ -402,7 +402,7 @@ export const ProjectsList = [
       "An basic search bar where you can search different movies and get more information about them. Here you can also get popular movies information.",
     techStack: ["HTML", "CSS", "JS"],
     githubUrl: "https://github.com/Hashal890/Hotstar-Search-Bar",
-    liveUrl: "https://hotstar-search-bar-unit3.netlify.app/",
+    liveUrl: "https://hotstar-website-searchbar-project.netlify.app/",
     image:
       "https://github.com/Hashal890/Hotstar-Search-Bar/raw/main/assets/trendingMovies.png",
   },

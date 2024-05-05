@@ -84,10 +84,10 @@ export default function HomeBanner() {
         >
           <span>
             A <Code colorScheme="green">FULL STACK WEB DEVELOPER</Code> with a
-            total of 2 years and 7 months of hands-on experience in full-stack
-            web development. This includes 7 months from Masai School and an
-            additional 2 years of personal project building on both frontend and
-            backend technologies. Currently pursuing my B.Sc. in Computer
+            total of 1 year of hands-on experience in full-stack web
+            development. This includes 7 months from Masai School and an
+            additional 5 months of personal project building on both frontend
+            and backend technologies. Currently pursuing my B.Sc. in Computer
             Science from BITS Pilani, I am ready to relocate for the right
             opportunity. Passionate about leveraging technology to solve
             real-world problems, I am driven by a love for coding and a

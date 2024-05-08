@@ -38,13 +38,13 @@ export default function Navbar() {
         position: "fixed",
         top: "0",
         zIndex: "10000",
-        background: useColorModeValue("white", "black"),
+        background: useColorModeValue("#FFFFFF", "#1A202C"),
         width: "100%",
       }}
       className="navbar"
     >
       <Box
-        borderBottomColor={useColorModeValue("white", "blue.900")}
+        borderBottomColor={useColorModeValue("#FFFFFF", "#1A202C")}
         boxShadow="md"
       >
         <Flex
@@ -79,6 +79,7 @@ export default function Navbar() {
             <IconButton
               as={ChakraLink}
               href={"https://github.com/Hashal890"}
+              target={"_blank"}
               size="md"
               icon={<FaGithub />}
               aria-label="Github account"

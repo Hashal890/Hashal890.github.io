@@ -1,23 +1,18 @@
+import React from "react";
 import {
   Box,
   Flex,
-  Spacer,
   Tabs,
   TabPanels,
   TabPanel,
   SimpleGrid,
 } from "@chakra-ui/react";
-import React from "react";
-import Navbar from "../Components/Navbar";
-import Footer from "../Components/Footer";
 import ProjectCard from "../Components/ProjectCard";
 import { ProjectsList } from "../assets/data";
 
 export default function Projects() {
   return (
     <Flex flexDir="column" h="100vh">
-      <Navbar />
-      <br />
       <br />
       <br />
       <Box w={["97%", "97%", "80%"]} m="auto">
@@ -41,8 +36,8 @@ export default function Projects() {
           </TabPanels>
         </Tabs>
       </Box>
-      <Spacer />
-      <Footer />
+      <br />
+      <br />
     </Flex>
   );
 }

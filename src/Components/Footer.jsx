@@ -6,21 +6,25 @@ export default function Footer() {
     <Flex
       w="full"
       as="footer"
-      flexDir={{
-        base: "column",
-        sm: "row",
-      }}
       align="center"
       justify="center"
-      p={6}
       textAlign="center"
+      p={2}
+      position="fixed"
+      left={0}
+      bottom={0}
+      bg={useColorModeValue("#FFFFFF", "#1A202C")}
+      borderTop="1px solid"
+      borderColor={useColorModeValue("#FFFFFF", "#1A202C")}
+      zIndex={10}
+      width="100%"
     >
       <chakra.p
         py={{
           base: "2",
           sm: "0",
         }}
-        color={useColorModeValue("blackAlpha.900", "blue.500")}
+        color={useColorModeValue("#1A202C", "blue.500")}
       >
         Built by{"  "}
         <span>

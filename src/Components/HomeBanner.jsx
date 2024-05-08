@@ -1,7 +1,7 @@
 import React from "react";
 import {
   Flex,
-  Avatar,
+  Image,
   Box,
   useColorModeValue,
   Heading,
@@ -9,10 +9,9 @@ import {
   Link,
   Code,
   Button,
-  Image,
 } from "@chakra-ui/react";
-import Profile from "../assets/profile_photo.jpg";
-import Resume from "../assets/Harshal Pardeshi Resume.pdf";
+import Profile from "../assets/Harshal-Pardeshi-Profile-Photo.png";
+import Resume from "../assets/Harshal-Pardeshi-Resume.pdf";
 import { IoMdDownload } from "react-icons/io";
 
 export default function HomeBanner() {
@@ -24,15 +23,16 @@ export default function HomeBanner() {
       maxW="1100px"
       align="center"
     >
-      <Avatar
-        w="300px"
-        h="300px"
+      <Image
+        w={["230px", "300px"]}
+        h={["250px", "300px"]}
         src={Profile}
         alt="Harshal Image"
         loading="eager"
         mb="4"
         display={["block", "block", "none"]}
         alignSelf="center"
+        borderRadius={"20px"}
       />
       <Box p="4" mr="4" w={"full"} maxW="800px">
         <Heading
@@ -125,21 +125,21 @@ export default function HomeBanner() {
             textDecoration: "none",
           }}
           _focus={{ outline: "none" }}
-          download={"Harshal Pardeshi Resume.pdf"}
+          download={"Harshal-Pardeshi-Resume.pdf"}
           leftIcon={<IoMdDownload />}
         >
           Resume
         </Button>
       </Box>
       <Image
-        w="300px"
-        h="300px"
+        w={["230px", "300px"]}
+        h={["250px", "300px"]}
         src={Profile}
         alt="Harshal Image"
         display={["none", "none", "block"]}
         loading="eager"
         mb="6"
-        borderRadius="50%"
+        borderRadius={"20px"}
       />
     </Flex>
   );

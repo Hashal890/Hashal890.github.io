@@ -1,15 +1,11 @@
-import { Box, Code, Flex, Spacer, VStack } from "@chakra-ui/react";
 import React from "react";
-import Navbar from "../Components/Navbar";
-import Footer from "../Components/Footer";
+import { Box, Code, Flex, VStack } from "@chakra-ui/react";
 import { EducationDetails, ExperienceDetails } from "../assets/data";
 import AboutCard from "../Components/AboutCard";
 
 export default function About() {
   return (
     <Flex flexDir="column" h="100vh">
-      <Navbar />
-      <br />
       <br />
       <br />
       <Box w={["90%", "85%", "65%"]} m="auto" mt="5">
@@ -45,8 +41,8 @@ export default function About() {
           ))}
         </VStack>
       </Box>
-      <Spacer />
-      <Footer />
+      <br />
+      <br />
     </Flex>
   );
 }

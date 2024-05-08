@@ -1,8 +1,8 @@
+import React from "react";
 import {
   Flex,
   IconButton,
   Link,
-  Spacer,
   Stack,
   // Table,
   // Tbody,
@@ -11,16 +11,11 @@ import {
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
-import React from "react";
-import Navbar from "../Components/Navbar";
-import Footer from "../Components/Footer";
 import { ContactDetails } from "../assets/data";
 
 export default function Contact() {
   return (
     <Flex flexDir="column" h="100vh">
-      <Navbar />
-      <br />
       <br />
       <br />
       <Stack w={["85%", "70%", "50%"]} m="auto" mt="10">
@@ -87,8 +82,6 @@ export default function Contact() {
           </Table> */}
         </Flex>
       </Stack>
-      <Spacer />
-      <Footer />
     </Flex>
   );
 }

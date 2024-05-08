@@ -1,14 +1,5 @@
-import {
-  Flex,
-  Spacer,
-  SimpleGrid,
-  Box,
-  Code,
-  Image,
-} from "@chakra-ui/react";
 import React from "react";
-import Navbar from "../Components/Navbar";
-import Footer from "../Components/Footer";
+import { Flex, SimpleGrid, Box, Code, Image } from "@chakra-ui/react";
 import { SkillsList, Statistics } from "../assets/data.js";
 import SkillsCard from "../Components/SkillsCard";
 import GithubCalendar from "../Components/GithubCalender";
@@ -17,8 +8,6 @@ import StatisticsCard from "../Components/StatisticsCard";
 export default function Skills() {
   return (
     <Flex flexDir="column" h="100vh">
-      <Navbar />
-      <br />
       <br />
       <br />
       <Box w={["95%", "80%", "70%"]} m="auto">
@@ -63,8 +52,8 @@ export default function Skills() {
         </SimpleGrid>
         <GithubCalendar />
       </Box>
-      <Spacer />
-      <Footer />
+      <br />
+      <br />
     </Flex>
   );
 }

@@ -255,7 +255,7 @@ export const ProjectsList = [
       "MongoDB",
       "Chakra-UI",
     ],
-    githubUrl: "https://github.com/Hashal890/gusty-cover-2254",
+    githubUrl: "https://github.com/Hashal890/Bitrix24-Clone",
     liveUrl: "https://betrix24-clone.vercel.app/",
     image:
       "https://github.com/Hashal890/Bitrix24-Clone/raw/main/frontend/src/assets/homePage.png",
@@ -273,7 +273,7 @@ export const ProjectsList = [
       "Chakra-UI",
       "Bootstrap",
     ],
-    githubUrl: "https://github.com/Hashal890/stark-meeting-6715",
+    githubUrl: "https://github.com/Hashal890/Nature-Basket-Clone",
     liveUrl: "https://naturesbasketclone.vercel.app/",
     image:
       "https://github.com/Hashal890/Nature-Basket-Clone/raw/main/src/Assets/homePage.png",
@@ -283,7 +283,7 @@ export const ProjectsList = [
     description:
       "Zoomcar is an Indian car sharing platform, headquartered in Bangalore. The company was founded in 2013 by David Back and Greg Moran. It currently operates in 34+ cities.",
     techStack: ["HTML", "CSS", "JS", "React", "Chakra-UI", "Bootstrap"],
-    githubUrl: "https://github.com/Hashal890/educated-earth-4277",
+    githubUrl: "https://github.com/Hashal890/Zoom-Car-Clone",
     liveUrl: "https://zoomcarclone.vercel.app/",
     image:
       "https://github.com/Hashal890/Zoom-Car-Clone/raw/main/src/Assets/homePage.png",

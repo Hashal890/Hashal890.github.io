@@ -14,19 +14,7 @@ import { FaMoon, FaSun, FaGithub } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import NavLink from "./NavLink";
-// import { NavbarLinks } from "../assets/data.js";
-
-const NavbarLinks = [
-  { name: "Home", path: "/" },
-  { name: "About", path: "/about" },
-  { name: "Skills ", path: "/skills" },
-  { name: "Projects", path: "/projects" },
-  { name: "Contact", path: "/contact" },
-  {
-    name: "Resume",
-    path: "#",
-  },
-];
+import { NavbarLinks } from "../assets/data.js";
 
 export default function Navbar() {
   const { toggleColorMode } = useColorMode();
@@ -50,7 +38,7 @@ export default function Navbar() {
         <Flex
           justifyContent="space-between"
           alignItems="center"
-          w={["100%", "95%", "80%"]}
+          w={"98%"}
           pt="4"
           pb="4"
           maxW="container.lg"

@@ -9,10 +9,10 @@ import {
   Heading,
 } from "@chakra-ui/react";
 
-export default function AboutCard({
+export default function AboutCardEducationDetails({
   title,
   role,
-  skills,
+  marks,
   period,
 }) {
   return (
@@ -37,19 +37,11 @@ export default function AboutCard({
           <Text as="i" align="left" fontSize="sm">
             {role}
           </Text>
-          <Flex
-            spacing="1"
-            mt="3"
-            alignItems="center"
-            flexWrap="wrap"
-            gap="0.25rem"
-          >
-            {skills.map((skill) => (
-              <Tag size="sm" padding="0 3px" key={skill}>
-                {skill}
-              </Tag>
-            ))}
-          </Flex>
+          {marks && (
+            <Tag size="sm" padding="0 3px" w={"54px"}>
+              {marks}
+            </Tag>
+          )}
         </Stack>
       </Flex>
     </Box>

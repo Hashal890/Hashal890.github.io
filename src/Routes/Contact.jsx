@@ -4,10 +4,6 @@ import {
   IconButton,
   Link,
   Stack,
-  // Table,
-  // Tbody,
-  // Td,
-  // Tr,
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
@@ -18,7 +14,7 @@ export default function Contact() {
     <Flex flexDir="column" h="100vh">
       <br />
       <br />
-      <Stack w={["85%", "70%", "50%"]} m="auto" mt="10">
+      <Stack w={["85%", "70%", "70%", "50%"]} m="auto" mt="10">
         <Flex
           flexDirection={["column", "column", "column"]}
           alignItems="center"
@@ -43,43 +39,21 @@ export default function Contact() {
             <Text>Email-ID: pardeshiharshal90@gmail.com</Text>
           </Text>
           <Flex gap={3}>
-            {ContactDetails.map((c, ind) => (
-              <Link key={ind} href={c.link} isExternal bg="transparent">
-                <IconButton
-                  colorScheme="blue"
-                  variant="outline"
-                  aria-label="contact-button"
-                  size="lg"
-                  icon={<c.icon />}
-                />
-              </Link>
-            ))}
+            {ContactDetails.map((contact, ind) => {
+              const {id, link, icon} = contact;
+              return (
+                <Link key={id} href={link} isExternal bg="transparent">
+                  <IconButton
+                    colorScheme="blue"
+                    variant="outline"
+                    aria-label="contact-button"
+                    size="lg"
+                    icon={icon}
+                  />
+                </Link>
+              );
+            })}
           </Flex>
-          {/* <Table maxW={"400px"} m={"auto"}>
-            <Tbody>
-              {ContactDetails.map((c, index) => (
-                <Tr key={`${index}-${c.link}`}>
-                  <Link href={c.link} isExternal bg="transparent">
-                    <Flex>
-                      <Td>
-                        <IconButton
-                          colorScheme="blue"
-                          variant="outline"
-                          aria-label="contact-button"
-                          size="lg"
-                          icon={<c.icon />}
-                        />
-                      </Td>
-                      <Spacer />
-                      <Td>
-                        <Text>{c.name}</Text>
-                      </Td>
-                    </Flex>
-                  </Link>
-                </Tr>
-              ))}
-            </Tbody>
-          </Table> */}
         </Flex>
       </Stack>
     </Flex>

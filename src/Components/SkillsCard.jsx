@@ -25,11 +25,15 @@ export default function SkillsCard({ link, name, color, icon }) {
               w="35px"
             />
           ) : (
-            <Box mt="2" fontSize="3xl" color={color}>
+            <Box mt="2" fontSize="2xl" color={color}>
               {icon}
             </Box>
           )}
-          <Text fontSize={["xs", "sm", "sm"]} pb="3" textAlign={"center"}>
+          <Text
+            fontSize={["10px", "10px", "10px", "13px"]}
+            pb="3"
+            textAlign={"center"}
+          >
             {name}
           </Text>
         </VStack>

@@ -5,6 +5,7 @@ import About from "./About.jsx";
 import Projects from "./Projects.jsx";
 import Contact from "./Contact.jsx";
 import Skills from "./Skills.jsx";
+import Experience from "./Experience.jsx";
 
 export default function AllRoutes() {
   return (
@@ -14,6 +15,7 @@ export default function AllRoutes() {
       <Route path="/skills" element={<Skills />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/experience" element={<Experience />} />
     </Routes>
   );
 }

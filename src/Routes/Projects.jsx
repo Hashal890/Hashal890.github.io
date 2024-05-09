@@ -15,22 +15,33 @@ export default function Projects() {
     <Flex flexDir="column" h="100vh">
       <br />
       <br />
-      <Box w={["97%", "97%", "80%"]} m="auto">
+      <Box w={["97%", "97%", "95%", "80%"]} m="auto">
         <Tabs variant="soft-rounded" colorScheme="blue" align="center" w="100%">
           <TabPanels minHeight={"50vh"}>
             <TabPanel px={0}>
               <SimpleGrid columns={[1, 1, 2]} spacing={4} mt={8}>
-                {ProjectsList.map((rep, index) => (
-                  <ProjectCard
-                    key={index + 1}
-                    title={rep.title}
-                    description={rep.description}
-                    techStack={rep.techStack}
-                    githubUrl={rep.githubUrl}
-                    liveUrl={rep.liveUrl}
-                    image={rep.image}
-                  />
-                ))}
+                {ProjectsList.map((rep, index) => {
+                  const {
+                    id,
+                    title,
+                    description,
+                    techStack,
+                    githubUrl,
+                    liveUrl,
+                    image,
+                  } = rep;
+                  return (
+                    <ProjectCard
+                      key={id}
+                      title={title}
+                      description={description}
+                      techStack={techStack}
+                      githubUrl={githubUrl}
+                      liveUrl={liveUrl}
+                      image={image}
+                    />
+                  );
+                })}
               </SimpleGrid>
             </TabPanel>
           </TabPanels>

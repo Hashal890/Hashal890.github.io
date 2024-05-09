@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Code, Flex, Divider, VStack, Spacer } from "@chakra-ui/react";
+import { Box, Code, Flex, Divider, VStack } from "@chakra-ui/react";
 import { EducationDetails } from "../assets/data";
 import AboutCardEducationDetails from "../Components/AboutCardEducationDetails";
 import AboutMeIntroduction from "../Components/AboutMeIntroduction";

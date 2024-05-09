@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { IoMdDownload } from "react-icons/io";
 import { FaEye } from "react-icons/fa";
+import Typist from "react-typist";
 
 export default function Home() {
   return (
@@ -59,9 +60,11 @@ export default function Home() {
         </Text>
         here
       </Heading>
-      <Code colorScheme={"whatsapp"} fontSize={"18px"}>
-        FULL STACK WEB DEVELOPER
-      </Code>
+      <Typist>
+        <Code colorScheme={"whatsapp"} fontSize={"18px"}>
+          FULL STACK WEB DEVELOPER
+        </Code>
+      </Typist>
       <Flex gap={4} justifyContent={"center"} alignItems={"center"}>
         <Button
           as="a"

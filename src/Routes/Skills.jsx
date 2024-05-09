@@ -1,9 +1,9 @@
 import React from "react";
 import { Flex, SimpleGrid, Box, Code, Image } from "@chakra-ui/react";
 import { SkillsList, Statistics } from "../assets/data.js";
-import SkillsCard from "../Components/SkillsCard";
-import GithubCalendar from "../Components/GithubCalender";
-import StatisticsCard from "../Components/StatisticsCard";
+import SkillsCard from "../Components/SkillsCard.jsx";
+import GithubCalendar from "../Components/GithubCalender.jsx";
+import StatisticsCard from "../Components/StatisticsCard.jsx";
 
 export default function Skills() {
   return (

@@ -242,7 +242,7 @@ export const SkillsList = [
 export const NavbarLinks = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
-  { name: "Experience", path: "/experience" },
+  // { name: "Experience", path: "/experience" },
   { name: "Skills ", path: "/skills" },
   { name: "Projects", path: "/projects" },
   { name: "Contact", path: "/contact" },

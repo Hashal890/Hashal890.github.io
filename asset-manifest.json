@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.57739328.css",
-    "main.js": "/static/js/main.1ba769e0.js",
+    "main.js": "/static/js/main.d670e46a.js",
     "static/js/787.d92b2039.chunk.js": "/static/js/787.d92b2039.chunk.js",
-    "static/media/Harshal-Pardeshi-Profile-Photo.png": "/static/media/Harshal-Pardeshi-Profile-Photo.e7e82325a7cf9707361e.png",
+    "static/media/Harshal-Pardeshi-Profile-Photo.png": "/static/media/Harshal-Pardeshi-Profile-Photo.b23f4c6cc2319a93fe9b.png",
     "index.html": "/index.html",
     "main.57739328.css.map": "/static/css/main.57739328.css.map",
-    "main.1ba769e0.js.map": "/static/js/main.1ba769e0.js.map",
+    "main.d670e46a.js.map": "/static/js/main.d670e46a.js.map",
     "787.d92b2039.chunk.js.map": "/static/js/787.d92b2039.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.57739328.css",
-    "static/js/main.1ba769e0.js"
+    "static/js/main.d670e46a.js"
   ]
 }

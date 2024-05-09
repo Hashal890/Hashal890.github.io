@@ -5,7 +5,7 @@ import { ExperienceDetails } from "../assets/data";
 
 const Experience = () => {
   return (
-    <Box w={["95%", "95%", "90%", "65%"]} m="auto" mt="5">
+    <Box w={["95%", "95%", "90%", "75%"]} m="auto" mt="5">
       <br />
       <br />
       <Code colorScheme="orange" mb="1rem" fontSize="18px">

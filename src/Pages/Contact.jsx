@@ -12,10 +12,10 @@ import { ContactDetails } from "../assets/data";
 
 export default function Contact() {
   return (
-    <Flex flexDir="column" h="100vh">
-      <br />
-      <br />
-      <Stack w={["85%", "70%", "70%", "50%"]} m="auto" mt="10">
+    <Flex flexDir="column" id={"contact"} h={"70vh"}>
+      {/* <br />
+      <br /> */}
+      <Stack w={["85%", "70%", "70%", "50%"]} mb={6} m="auto">
         <Flex
           flexDirection={["column", "column", "column"]}
           alignItems="center"

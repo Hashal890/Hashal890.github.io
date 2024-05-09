@@ -53,14 +53,17 @@ export default function Navbar() {
           />
           <HStack spacing="4" alignItems="center">
             <HStack as="nav" spacing="4" display={{ base: "none", md: "flex" }}>
-              {NavbarLinks.map((link, i) => (
-                <NavLink
-                  key={i}
-                  to={link.path}
-                  name={link.name}
-                  onClick={() => onClose()}
-                />
-              ))}
+              {NavbarLinks.map((link, i) => {
+                const { id, to, name } = link;
+                return (
+                  <NavLink
+                    key={id}
+                    to={to}
+                    name={name}
+                    onClick={() => onClose()}
+                  />
+                );
+              })}
             </HStack>
           </HStack>
           <HStack alignItems="center">
@@ -93,15 +96,17 @@ export default function Navbar() {
             display={["inherit", "inherit", "none"]}
           >
             <Stack as="nav" spacing="4" alignItems="center" w="">
-              {NavbarLinks.map((link, i) => (
-                <NavLink
-                  key={i}
-                  to={link.path}
-                  name={link.name}
-                  w="md"
-                  onClick={() => onClose()}
-                />
-              ))}
+              {NavbarLinks.map((link, i) => {
+                const { id, to, name } = link;
+                return (
+                  <NavLink
+                    key={id}
+                    to={to}
+                    name={name}
+                    onClick={() => onClose()}
+                  />
+                );
+              })}
             </Stack>
           </Box>
         ) : null}

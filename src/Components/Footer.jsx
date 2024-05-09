@@ -10,9 +10,9 @@ export default function Footer() {
       justify="center"
       textAlign="center"
       p={2}
-      position="fixed"
-      left={0}
-      bottom={0}
+      // position="fixed"
+      // left={0}
+      // bottom={0}
       bg={useColorModeValue("#FFFFFF", "#1A202C")}
       borderTop="1px solid"
       borderColor={useColorModeValue("#FFFFFF", "#1A202C")}

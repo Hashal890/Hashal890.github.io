@@ -1,7 +1,7 @@
 import React from "react";
 import GitHubCalendar from "react-github-calendar";
 import { Row } from "react-bootstrap";
-import { Code } from "@chakra-ui/react";
+import { Code, Flex } from "@chakra-ui/react";
 
 export default function GithubCalendar() {
   return (
@@ -12,9 +12,16 @@ export default function GithubCalendar() {
         marginBottom: "1rem",
       }}
     >
-      <Code colorScheme="yellow" mb="1rem" fontSize="24px" borderRadius={"xl"}>
-        Github Calender
-      </Code>
+      <Flex justifyContent={"center"} alignItems={"center"} mb={6}>
+        <Code
+          colorScheme="yellow"
+          mb="1rem"
+          fontSize="24px"
+          borderRadius={"xl"}
+        >
+          Github Calender
+        </Code>
+      </Flex>
       <GitHubCalendar
         username="Hashal890"
         blockSize={15}

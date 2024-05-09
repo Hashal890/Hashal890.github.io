@@ -1,27 +1,25 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
-import AllRoutes from "./Routes/AllRoutes";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
-// import Home from "./Routes/Home";
-// import About from "./Routes/About";
-// import Skills from "./Routes/Skills";
-// import Projects from "./Routes/Projects";
-// import Contact from "./Routes/Contact";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Skills from "./Pages/Skills";
+import Projects from "./Pages/Projects";
+import Contact from "./Pages/Contact";
 
 export default function App() {
   return (
     <Box>
       <Navbar />
       <br />
-      <AllRoutes />
-      {/* <Home />
+      <Home />
       <About />
       <Skills />
       <Projects />
-      <Contact /> */}
-      <br />
-      <br />
+      <Contact />
+      {/* <br />
+      <br /> */}
       <Footer />
     </Box>
   );

@@ -7,19 +7,21 @@ import StatisticsCard from "../Components/StatisticsCard.jsx";
 
 export default function Skills() {
   return (
-    <Flex flexDir="column" h="100vh">
-      <br />
-      <br />
+    <Flex flexDir="column" id={"skills"}>
+      {/* <br />
+      <br /> */}
       <Box w={["95%", "90%", "90%", "75%"]} m="auto">
-        <Code
-          colorScheme="yellow"
-          mb="0.25rem"
-          mt="2rem"
-          fontSize="24px"
-          borderRadius={"xl"}
-        >
-          Skills
-        </Code>
+        <Flex justifyContent={"center"} alignItems={"center"} mb={6}>
+          <Code
+            colorScheme="yellow"
+            mb="0.25rem"
+            mt="2rem"
+            fontSize="24px"
+            borderRadius={"xl"}
+          >
+            Skills
+          </Code>
+        </Flex>
         <SimpleGrid columns={[3, 4, 6]} spacing="4" mt="5" mb="5">
           {SkillsList.map((skill, index) => {
             const { id, link, name, color, icon } = skill;
@@ -34,14 +36,16 @@ export default function Skills() {
             );
           })}
         </SimpleGrid>
-        <Code
-          colorScheme="yellow"
-          mt="2rem"
-          fontSize="24px"
-          borderRadius={"xl"}
-        >
-          Statistics
-        </Code>
+        <Flex justifyContent={"center"} alignItems={"center"} mb={6}>
+          <Code
+            colorScheme="yellow"
+            mt="2rem"
+            fontSize="24px"
+            borderRadius={"xl"}
+          >
+            Statistics
+          </Code>
+        </Flex>
         <Flex
           mt={4}
           gap={4}

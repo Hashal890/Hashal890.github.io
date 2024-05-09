@@ -1,37 +1,41 @@
 import React from "react";
-import { Box, Code, Flex, Divider, VStack } from "@chakra-ui/react";
+import { Box, Code, Flex, VStack } from "@chakra-ui/react";
 import { EducationDetails } from "../assets/data";
 import AboutCardEducationDetails from "../Components/AboutCardEducationDetails";
 import AboutMeIntroduction from "../Components/AboutMeIntroduction";
 
 export default function About() {
   return (
-    <Flex flexDir="column" h="100vh">
-      <br />
-      <br />
+    <Flex flexDir="column" id={"about"}>
+      {/* <br />
+      <br /> */}
       <Box w={["95%", "90%", "90%", "75%"]} m="auto" mt="5">
-        <Code
-          colorScheme="yellow"
-          mb={"1rem"}
-          mt={"1rem"}
-          fontSize="24px"
-          borderRadius={"xl"}
-        >
-          About Me
-        </Code>
+        <Flex justifyContent={"center"} alignItems={"center"} mb={6}>
+          <Code
+            colorScheme="yellow"
+            mb={"1rem"}
+            mt={"1rem"}
+            fontSize="24px"
+            borderRadius={"xl"}
+          >
+            About Me
+          </Code>
+        </Flex>
         <AboutMeIntroduction />
         <br />
-        <Divider />
+        {/* <Divider /> */}
         <br />
-        <Code
-          colorScheme="yellow"
-          mb={"1rem"}
-          mt={"1rem"}
-          fontSize="24px"
-          borderRadius={"xl"}
-        >
-          Education
-        </Code>
+        <Flex justifyContent={"center"} alignItems={"center"} mb={6}>
+          <Code
+            colorScheme="yellow"
+            mb={"1rem"}
+            mt={"1rem"}
+            fontSize="24px"
+            borderRadius={"xl"}
+          >
+            Education
+          </Code>
+        </Flex>
         <VStack spacing="4" marginBottom="6" align="left" mx={[0, 0, 6]} mt="3">
           {EducationDetails.map((elem, index) => {
             const { id, title, role, marks, period } = elem;

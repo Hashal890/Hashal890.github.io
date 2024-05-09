@@ -22,6 +22,7 @@ export default function Home() {
       h={"100vh"}
       w={"100%"}
       mt={-16}
+      id={"home"}
     >
       <Heading
         mb={6}

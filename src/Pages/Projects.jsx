@@ -14,14 +14,16 @@ import { ProjectsList } from "../assets/data";
 
 export default function Projects() {
   return (
-    <Flex flexDir="column" h="100vh">
+    <Flex flexDir="column" id={"projects"} pt={6}>
+      {/* <br />
       <br />
-      <br />
-      <br />
-      <Box w={["97%", "97%", "95%", "80%"]} m="auto">
-        <Code colorScheme="yellow" fontSize="24px" borderRadius={"xl"}>
-          Projects
-        </Code>
+      <br /> */}
+      <Box w={["97%", "97%", "95%", "75%"]} m="auto">
+        <Flex justifyContent={"center"} alignItems={"center"} mb={6}>
+          <Code colorScheme="yellow" fontSize="24px" borderRadius={"xl"}>
+            Projects
+          </Code>
+        </Flex>
         <Tabs variant="soft-rounded" colorScheme="blue" align="center" w="100%">
           <TabPanels minHeight={"50vh"}>
             <TabPanel px={0}>

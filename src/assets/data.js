@@ -240,15 +240,16 @@ export const SkillsList = [
 ];
 
 export const NavbarLinks = [
-  { name: "Home", path: "/" },
-  { name: "About", path: "/about" },
-  // { name: "Experience", path: "/experience" },
-  { name: "Skills ", path: "/skills" },
-  { name: "Projects", path: "/projects" },
-  { name: "Contact", path: "/contact" },
+  { id: 1, to: "home", name: "Home" },
+  { id: 2, to: "about", name: "About" },
+  // { id: 3, to: "experience", name: "Experience" },
+  { id: 4, to: "skills", name: "Skills " },
+  { id: 5, to: "projects", name: "Projects" },
+  { id: 6, to: "contact", name: "Contact" },
   {
+    id: 7,
+    to: "https://drive.google.com/file/d/1pV8XBrEE6ZaN5BbITcfE215MNNCLl94z/view?usp=sharing",
     name: "Resume",
-    path: "#",
   },
 ];
 

@@ -1,11 +1,8 @@
 import React from "react";
 import { Button } from "@chakra-ui/react";
-import { NavLink as Link, useLocation } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 
-export default function NavLink({ to, name, onClose, ...rest }) {
-  const location = useLocation();
-  const isActive = location.pathname === to;
-
+export default function NavLink({ to, name, onClick }) {
   return (
     <>
       {name === "Resume" ? (
@@ -13,21 +10,29 @@ export default function NavLink({ to, name, onClose, ...rest }) {
           href="https://drive.google.com/file/d/1pV8XBrEE6ZaN5BbITcfE215MNNCLl94z/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
+          cursor={"pointer"}
         >
           Resume
         </a>
       ) : (
-        <Link to={to}>
+        <ScrollLink
+          to={to}
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          >
           <Button
             as="a"
-            variant={isActive ? "outline" : "ghost"}
-            colorScheme={isActive ? "blue" : "gray"}
+            variant="ghost"
+            colorScheme="gray"
             size="sm"
-            {...rest}
+            cursor={"pointer"}
+            onClick={onClick}
           >
             {name}
           </Button>
-        </Link>
+        </ScrollLink>
       )}
     </>
   );

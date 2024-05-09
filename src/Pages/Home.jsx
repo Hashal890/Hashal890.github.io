@@ -19,9 +19,9 @@ export default function Home() {
       gap={4}
       justifyContent={"center"}
       alignItems={"center"}
-      h={"100vh"}
+      h={"92vh"}
       w={"100%"}
-      mt={-16}
+      // mt={-16}
       id={"home"}
     >
       <Heading

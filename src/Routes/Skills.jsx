@@ -11,7 +11,13 @@ export default function Skills() {
       <br />
       <br />
       <Box w={["95%", "90%", "90%", "75%"]} m="auto">
-        <Code colorScheme="whatsapp" mb="0.25rem" mt="2rem" fontSize="18px">
+        <Code
+          colorScheme="yellow"
+          mb="0.25rem"
+          mt="2rem"
+          fontSize="24px"
+          borderRadius={"xl"}
+        >
           Skills
         </Code>
         <SimpleGrid columns={[3, 4, 6]} spacing="4" mt="5" mb="5">
@@ -28,7 +34,12 @@ export default function Skills() {
             );
           })}
         </SimpleGrid>
-        <Code colorScheme="orange" mt="2rem" fontSize="18px">
+        <Code
+          colorScheme="yellow"
+          mt="2rem"
+          fontSize="24px"
+          borderRadius={"xl"}
+        >
           Statistics
         </Code>
         <Flex

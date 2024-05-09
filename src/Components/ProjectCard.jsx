@@ -51,6 +51,7 @@ export default function ProjectCard({
               size="4xl"
             />
           }
+          w={"lg"}
         />
         <Stack
           spacing="1"

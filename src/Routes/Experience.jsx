@@ -8,7 +8,7 @@ const Experience = () => {
     <Box w={["95%", "95%", "90%", "75%"]} m="auto" mt="5">
       <br />
       <br />
-      <Code colorScheme="orange" mb="1rem" fontSize="18px">
+      <Code colorScheme="yellow" mb="1rem" fontSize="24px" borderRadius={"xl"}>
         Experience
       </Code>
       <VStack spacing="4" marginBottom="6" align="left" mx={[0, 0, 6]} mt="3">

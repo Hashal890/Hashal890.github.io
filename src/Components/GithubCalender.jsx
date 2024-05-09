@@ -12,7 +12,7 @@ export default function GithubCalendar() {
         marginBottom: "1rem",
       }}
     >
-      <Code colorScheme="purple" mb="1rem" fontSize="18px">
+      <Code colorScheme="yellow" mb="1rem" fontSize="24px" borderRadius={"xl"}>
         Github Calender
       </Code>
       <GitHubCalendar

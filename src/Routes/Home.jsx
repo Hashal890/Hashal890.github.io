@@ -5,12 +5,11 @@ import {
   useColorModeValue,
   Heading,
   Text,
-  Link,
   Code,
   Button,
 } from "@chakra-ui/react";
-import Resume from "../assets/Harshal-Pardeshi-Resume.pdf";
 import { IoMdDownload } from "react-icons/io";
+import { FaEye } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -21,6 +20,7 @@ export default function Home() {
       alignItems={"center"}
       h={"100vh"}
       w={"100%"}
+      mt={-16}
     >
       <Heading
         mb={6}
@@ -62,25 +62,38 @@ export default function Home() {
       <Code colorScheme={"whatsapp"} fontSize={"18px"}>
         FULL STACK WEB DEVELOPER
       </Code>
-      <Button
-        as={Link}
-        href={Resume}
-        target="_blank"
-        w="ms"
-        mt={6}
-        bg={useColorModeValue("gray.300", "gray.700")}
-        color={useColorModeValue("gray.800", "white")}
-        rounded="md"
-        _hover={{
-          bg: useColorModeValue("green.200", "yellow.500"),
-          textDecoration: "none",
-        }}
-        _focus={{ outline: "none" }}
-        download={"Harshal-Pardeshi-Resume.pdf"}
-        leftIcon={<IoMdDownload />}
-      >
-        Resume
-      </Button>
+      <Flex gap={4} justifyContent={"center"} alignItems={"center"}>
+        <Button
+          as="a"
+          href={
+            "https://drive.google.com/uc?export=download&id=1pV8XBrEE6ZaN5BbITcfE215MNNCLl94z"
+          }
+          target="_blank"
+          rel="noopener noreferrer"
+          rightIcon={<IoMdDownload />}
+          w="ms"
+          mt={6}
+          colorScheme={"messenger"}
+          size={"md"}
+        >
+          Download Resume
+        </Button>
+        <Button
+          as="a"
+          href={
+            "https://drive.google.com/file/d/1pV8XBrEE6ZaN5BbITcfE215MNNCLl94z/view?usp=sharing"
+          }
+          target="_blank"
+          rel="noopener noreferrer"
+          rightIcon={<FaEye />}
+          w="ms"
+          mt={6}
+          colorScheme={"messenger"}
+          size={"md"}
+        >
+          View Resume
+        </Button>
+      </Flex>
     </Flex>
   );
 }

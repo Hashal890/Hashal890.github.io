@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  Code,
   Flex,
   IconButton,
   Link,
@@ -20,13 +21,9 @@ export default function Contact() {
           alignItems="center"
           w="100%"
         >
-          <Text
-            color={useColorModeValue("gray.800", "gray.200")}
-            fontSize="28"
-            mb="10"
-          >
+          <Code colorScheme="yellow" fontSize="24px" borderRadius={"xl"} mb={8}>
             Let's chat!
-          </Text>
+          </Code>
           <Text
             fontSize="20"
             color={useColorModeValue("gray.800", "gray.500")}
@@ -40,7 +37,7 @@ export default function Contact() {
           </Text>
           <Flex gap={3}>
             {ContactDetails.map((contact, ind) => {
-              const {id, link, icon} = contact;
+              const { id, link, icon } = contact;
               return (
                 <Link key={id} href={link} isExternal bg="transparent">
                   <IconButton

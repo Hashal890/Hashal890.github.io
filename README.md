@@ -1,8 +1,6 @@
-## Harshal Portfolio
-
+## Harshal's Portfolio
 
 **Welcome to my online portfolio!**
-
 
 **About Me:**
 
@@ -10,7 +8,6 @@
 - I am proficient in a variety of technologies, including HTML, CSS, JavaScript, TypeScript, React.JS, Node.JS, Express.JS, Next.JS, Redux, Context API, MongoDB, Rest API, and more. I have a keen eye for detail and a passion for creating clean, efficient, and maintainable code.
 - You can explore my [portfolio](https://hashal890.github.io/) , My [resume](https://drive.google.com/file/d/1pV8XBrEE6ZaN5BbITcfE215MNNCLl94z/view?usp=share_link) is also available for more details.
 - I am enthusiastic about contributing my skills to a dynamic team and am ready to relocate to the job location for the right opportunity. Let's connect and discuss how we can collaborate to create amazing web experiences!
-
 
 **Technologies:**
 
@@ -36,8 +33,7 @@
 - Web Scraping
 - JWT
 
-
-**Contact:**
+**Connect with me:**
 
 - [Email](pardeshiharshal90@gmail.com)
 - [LinkedIn](https://www.linkedin.com/in/harshalpardeshi/)

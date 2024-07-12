@@ -32,8 +32,6 @@ import {
   BsWhatsapp,
   BsGithub,
   BsLinkedin,
-  // BsTwitter,
-  // BsInstagram,
 } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 import { Image } from "@chakra-ui/react";
@@ -69,7 +67,7 @@ export const SkillsList = [
   },
   {
     id: 5,
-    name: "ExpressJS",
+    name: "Express.js",
     link: "https://expressjs.com/",
     icon: <SiExpress />,
     color: "gray.600",
@@ -83,7 +81,7 @@ export const SkillsList = [
   },
   {
     id: 7,
-    name: "NextJS",
+    name: "Next.js",
     link: "https://nextjs.org/",
     icon: <TbBrandNextjs />,
     color: "rgb(0, 0, 0)",
@@ -132,7 +130,7 @@ export const SkillsList = [
   },
   {
     id: 14,
-    name: "Chakra UI",
+    name: "Chakra-UI",
     link: "https://chakra-ui.com/",
     icon: <SiChakraui />,
     color: "teal.400",
@@ -241,13 +239,15 @@ export const SkillsList = [
 
 export const NavbarLinks = [
   { id: 1, to: "home", name: "Home" },
-  { id: 2, to: "about", name: "About" },
+  { id: 2, to: "about", name: "About Me" },
   // { id: 3, to: "experience", name: "Experience" },
-  { id: 4, to: "skills", name: "Skills " },
-  { id: 5, to: "projects", name: "Projects" },
-  { id: 6, to: "contact", name: "Contact" },
+  { id: 4, to: "education", name: "Education" },
+  { id: 5, to: "skills", name: "Skills " },
+  { id: 6, to: "projects", name: "Projects" },
+  { id: 7, to: "github-stats", name: "Github Stats" },
+  { id: 8, to: "contact", name: "Contact Me" },
   {
-    id: 7,
+    id: 9,
     to: "https://drive.google.com/file/d/1pV8XBrEE6ZaN5BbITcfE215MNNCLl94z/view?usp=sharing",
     name: "Resume",
   },
@@ -262,9 +262,9 @@ export const ProjectsList = [
     techStack: [
       "HTML",
       "CSS",
-      "JS",
-      "NextJS",
-      "ExpressJS",
+      "JavaScript",
+      "Next.js",
+      "Express.js",
       "Redis",
       "Json web token",
       "Razorpay",
@@ -276,24 +276,68 @@ export const ProjectsList = [
       "https://github.com/Hashal890/Exclusive-Yoox-Clone/raw/main/assets/mensProductsPage.png",
   },
   {
-    id: 2,
-    title: "Bitrix-24 Website Clone",
+    id: 17,
+    title: "TimeZone Convertor and Scheduler",
     description:
-      "Created a Bitrix24 website clone, offering a unified workspace for customer relationship management, project management, and collaboration. Enhance your business management with this all-in-one solution.",
+      "TimeZone Convertor and Scheduler is a React-based tool for converting time between multiple time zones. Features include a responsive time slider, date picker, dark mode, drag-and-drop reordering, and Google Meet scheduling.",
     techStack: [
-      "HTML",
-      "CSS",
-      "JS",
-      "ReactJS",
-      "ExpressJS",
-      "Redux",
-      "MongoDB",
+      "React.js",
+      "Moment.js",
+      "React Select",
+      "React Datepicker",
+      "Hello Pangea Dnd",
+      "JavaScript",
+      "Axios",
       "Chakra-UI",
+      "React Icons",
     ],
-    githubUrl: "https://github.com/Hashal890/Bitrix24-Clone",
-    liveUrl: "https://betrix24-clone.vercel.app/",
+    githubUrl: "https://github.com/Hashal890/timezone-convertor-and-scheduler",
+    liveUrl: "https://timezone-convertor-and-scheduler.vercel.app/",
     image:
-      "https://github.com/Hashal890/Bitrix24-Clone/raw/main/frontend/src/assets/homePage.png",
+      "https://github.com/Hashal890/timezone-convertor-and-scheduler/raw/main/src/assets/project-demonstration.gif",
+  },
+  {
+    id: 16,
+    title: "Multilingual Text and Speech Translator",
+    description:
+      "A MERN stack web app for translating text between multiple languages. Features a clean UI, automatic language detection, speech-to-text input, and text-to-speech output. Utilizes Google Translate API and MongoDB for storing translation data. Designed for scalability, efficiency, and robust performance.",
+    techStack: [
+      "MongoDB",
+      "Mongoose",
+      "Express.js",
+      "React.js",
+      "React Speech Recognition",
+      "JavaScript",
+      "Axios",
+      "Chakra-UI",
+      "React Icons",
+    ],
+    githubUrl:
+      "https://github.com/Hashal890/multilingual-text-and-speech-translator",
+    liveUrl: "https://multilingual-text-and-speech-translator.vercel.app/",
+    image:
+      "https://github.com/Hashal890/multilingual-text-and-speech-translator/raw/main/screenshots/home-page-result.jpg",
+  },
+  {
+    id: 15,
+    title: "Products Transaction App",
+    description:
+      "Developed a comprehensive single-page MERN application showcasing a product transactions table alongside monthly transaction statistics. It includes dynamic visual elements such as a bar chart illustrating price ranges and item counts for the chosen month, and a pie chart presenting unique categories with corresponding item counts.",
+    techStack: [
+      "MongoDB",
+      "Mongoose",
+      "Express.js",
+      "React.js",
+      "Context API",
+      "JavaScript",
+      "Axios",
+      "Chakra-UI",
+      "React Icons",
+    ],
+    githubUrl: "https://github.com/Hashal890/products-transaction",
+    liveUrl: "https://products-transaction-statistics-frontend.vercel.app/",
+    image:
+      "https://github.com/Hashal890/products-transaction/raw/main/screenshots/product-transactions-table.jpg",
   },
   {
     id: 3,
@@ -303,7 +347,7 @@ export const ProjectsList = [
     techStack: [
       "HTML",
       "CSS",
-      "JS",
+      "JavaScript",
       "React",
       "WebScrapping",
       "Chakra-UI",
@@ -315,41 +359,33 @@ export const ProjectsList = [
       "https://github.com/Hashal890/Nature-Basket-Clone/raw/main/src/Assets/homePage.png",
   },
   {
-    id: 4,
-    title: "Zoom Car Website Clone",
+    id: 9,
+    title: "Youtube App",
     description:
-      "Built a clone of the Zoomcar website, an Indian car sharing platform founded in 2013, operating in 34+ cities. Developed using JavaScript, React, Chakra UI and other technologies. Allows users to rent cars for short periods, providing a seamless booking experience.",
-    techStack: ["HTML", "CSS", "JS", "React", "Chakra-UI", "Bootstrap"],
-    githubUrl: "https://github.com/Hashal890/Zoom-Car-Clone",
-    liveUrl: "https://zoomcarclone.vercel.app/",
+      "I built a YouTube app with key features: search and watch videos, random video suggestions, and a responsive layout for seamless viewing.",
+    techStack: ["HTML", "CSS", "JavaScript"],
+    githubUrl: "https://github.com/Hashal890/Youtube-App",
+    liveUrl: "https://youtube-webapp-project.netlify.app/",
     image:
-      "https://github.com/Hashal890/Zoom-Car-Clone/raw/main/src/Assets/homePage.png",
+      "https://github.com/Hashal890/Youtube-App/raw/main/assets/searchResults.png",
   },
   {
-    id: 5,
-    title: "Dot & Key Website Clone",
+    id: 11,
+    title: "Space Tourism Website",
     description:
-      "Created a clone of the Dot & Key website, a skincare brand emphasizing individuality. Offering advanced products tailored to unique lifestyle needs, this project replicates their innovative approach to skincare.",
-    techStack: [
-      "HTML",
-      "CSS",
-      "JS",
-      "WebScrapping",
-      "Bootstrap",
-      "Slick Slider",
-      "Jquery",
-    ],
-    githubUrl: "https://github.com/Hashal890/dot-key-clone",
-    liveUrl: "https://dot-and-key-website-clone-project.netlify.app/",
+      "Developed as a solution for the Space Tourism Website challenge from Frontend Mentor, this project offers users information about space tours. It allows users to view the optimal layout for each page based on their device's screen size, experience hover states for interactive elements, and toggle between tabs to explore new information.",
+    techStack: ["HTML", "CSS", "JavaScript"],
+    githubUrl: "https://github.com/Hashal890/Space-tourism-website",
+    liveUrl: "https://space-tourism-website-projectt.netlify.app/",
     image:
-      "https://github.com/Hashal890/dot-key-clone/raw/main/assets/homePage.png",
+      "https://github.com/Hashal890/Space-tourism-website/raw/main/assets/solution/homePage.png",
   },
   {
     id: 6,
     title: "Kimaye Website Clone",
     description:
       "I collaborated on a project to clone the Kimaye website, which focuses on delivering safe, high-quality fruits to your doorstep. Our group embraced the cooperative and partnership principles at the core of Kimaye's values.",
-    techStack: ["HTML", "CSS", "JS", "Bootstrap"],
+    techStack: ["HTML", "CSS", "JavaScript", "Bootstrap"],
     githubUrl: "https://github.com/Hashal890/Team-Kimayi",
     liveUrl: "https://kimaye-website-clone-project.netlify.app/",
     image:
@@ -363,7 +399,7 @@ export const ProjectsList = [
     techStack: [
       "HTML",
       "CSS",
-      "JS",
+      "JavaScript",
       "ReactJS",
       "Redux",
       "Redux Thunk",
@@ -377,66 +413,101 @@ export const ProjectsList = [
       "https://github.com/Hashal890/recipe-book/raw/main/src/assets/homePage.png",
   },
   {
-    id: 8,
-    title: "Teerex T-shirts Store",
-    description:
-      "Developed a user-friendly web app enabling customers to browse, add, and purchase t-shirts from a catalog. Seamlessly integrates shopping cart functionality for a smooth checkout experience.",
-    techStack: ["HTML", "CSS", "JS", "ReactJS", "Chakra-UI", "Context API"],
-    githubUrl: "https://github.com/Hashal890/TeeRex-Store",
-    liveUrl: "https://teerexstore.vercel.app/",
-    image:
-      "https://github.com/Hashal890/TeeRex-Store/raw/main/src/Assets/homePage.png",
-  },
-  {
-    id: 9,
-    title: "Youtube App",
-    description:
-      "I built a YouTube app with key features: search and watch videos, random video suggestions, and a responsive layout for seamless viewing.",
-    techStack: ["HTML", "CSS", "JS"],
-    githubUrl: "https://github.com/Hashal890/Youtube-App",
-    liveUrl: "https://youtube-webapp-project.netlify.app/",
-    image:
-      "https://github.com/Hashal890/Youtube-App/raw/main/assets/searchResults.png",
-  },
-  {
     id: 10,
     title: "Star Wars Characters Information",
     description:
       "Developed a Star Wars character search app, enabling users to easily find and explore details of their favorite characters from the Star Wars universe. Search, discover, and learn about iconic characters with ease!",
-    techStack: ["HTML", "CSS", "JS"],
+    techStack: ["HTML", "CSS", "JavaScript"],
     githubUrl: "https://github.com/Hashal890/Star-Wars",
     liveUrl: "https://star-wars-characters-information.netlify.app/",
     image:
       "https://github.com/Hashal890/Star-Wars/raw/main/assets/searchResults.png",
   },
   {
-    id: 11,
-    title: "Space Tourism Website",
-    description:
-      "Developed as a solution for the Space Tourism Website challenge from Frontend Mentor, this project offers users information about space tours. It allows users to view the optimal layout for each page based on their device's screen size, experience hover states for interactive elements, and toggle between tabs to explore new information.",
-    techStack: ["HTML", "CSS", "JS"],
-    githubUrl: "https://github.com/Hashal890/Space-tourism-website",
-    liveUrl: "https://space-tourism-website-projectt.netlify.app/",
-    image:
-      "https://github.com/Hashal890/Space-tourism-website/raw/main/assets/solution/homePage.png",
-  },
-  {
     id: 12,
     title: "Weather App",
     description:
       "Developed a weather application with versatile features: search any city for current weather, forecast for the next 7 days, and live location-based weather data. The app boasts a responsive layout for seamless use across devices.",
-    techStack: ["HTML", "CSS", "JS"],
+    techStack: ["HTML", "CSS", "JavaScript"],
     githubUrl: "https://github.com/Hashal890/Weather-App",
     liveUrl: "https://weather-webapp-project.netlify.app/",
     image:
       "https://github.com/Hashal890/Weather-App/raw/main/assets/homeOnePage.png",
   },
   {
+    id: 2,
+    title: "Bitrix-24 Website Clone",
+    description:
+      "Created a Bitrix24 website clone, offering a unified workspace for customer relationship management, project management, and collaboration. Enhance your business management with this all-in-one solution.",
+    techStack: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "ReactJS",
+      "Express.js",
+      "Redux",
+      "MongoDB",
+      "Chakra-UI",
+    ],
+    githubUrl: "https://github.com/Hashal890/Bitrix24-Clone",
+    liveUrl: "https://betrix24-clone.vercel.app/",
+    image:
+      "https://github.com/Hashal890/Bitrix24-Clone/raw/main/frontend/src/assets/homePage.png",
+  },
+  {
+    id: 4,
+    title: "Zoom Car Website Clone",
+    description:
+      "Built a clone of the Zoomcar website, an Indian car sharing platform founded in 2013, operating in 34+ cities. Developed using JavaScript, React, Chakra-UI and other technologies. Allows users to rent cars for short periods, providing a seamless booking experience.",
+    techStack: ["HTML", "CSS", "JavaScript", "React", "Chakra-UI", "Bootstrap"],
+    githubUrl: "https://github.com/Hashal890/Zoom-Car-Clone",
+    liveUrl: "https://zoomcarclone.vercel.app/",
+    image:
+      "https://github.com/Hashal890/Zoom-Car-Clone/raw/main/src/Assets/homePage.png",
+  },
+  {
+    id: 5,
+    title: "Dot & Key Website Clone",
+    description:
+      "Created a clone of the Dot & Key website, a skincare brand emphasizing individuality. Offering advanced products tailored to unique lifestyle needs, this project replicates their innovative approach to skincare.",
+    techStack: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "WebScrapping",
+      "Bootstrap",
+      "Slick Slider",
+      "Jquery",
+    ],
+    githubUrl: "https://github.com/Hashal890/dot-key-clone",
+    liveUrl: "https://dot-and-key-website-clone-project.netlify.app/",
+    image:
+      "https://github.com/Hashal890/dot-key-clone/raw/main/assets/homePage.png",
+  },
+  {
+    id: 8,
+    title: "Teerex T-shirts Store",
+    description:
+      "Developed a user-friendly web app enabling customers to browse, add, and purchase t-shirts from a catalog. Seamlessly integrates shopping cart functionality for a smooth checkout experience.",
+    techStack: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "ReactJS",
+      "Chakra-UI",
+      "Context API",
+    ],
+    githubUrl: "https://github.com/Hashal890/TeeRex-Store",
+    liveUrl: "https://teerexstore.vercel.app/",
+    image:
+      "https://github.com/Hashal890/TeeRex-Store/raw/main/src/Assets/homePage.png",
+  },
+  {
     id: 13,
     title: "Food App",
     description:
       "Developed a food app with search, recipe details, recipe of the day, random recipes, login/signup, debouncing, and a responsive layout. Explore delicious recipes effortlessly!",
-    techStack: ["HTML", "CSS", "JS", "Debouncing"],
+    techStack: ["HTML", "CSS", "JavaScript", "Debouncing"],
     githubUrl: "https://github.com/Hashal890/Food-App",
     liveUrl: "https://food-web-app-project.netlify.app/",
     image:
@@ -447,7 +518,7 @@ export const ProjectsList = [
     title: "Movies Hotstar Search Bar",
     description:
       "Developed a Hotstar search bar replica with advanced features: search for any movie, access trending/popular movies, and implemented debouncing for efficient searches. The project boasts a responsive layout for seamless user experience.",
-    techStack: ["HTML", "CSS", "JS"],
+    techStack: ["HTML", "CSS", "JavaScript"],
     githubUrl: "https://github.com/Hashal890/Hotstar-Search-Bar",
     liveUrl: "https://hotstar-website-searchbar-project.netlify.app/",
     image:
@@ -474,7 +545,7 @@ export const EducationDetails = [
     id: 3,
     title: "Government Polytechnic, Nashik",
     role: "Diploma in Mechanical Engineering",
-    marks: "8.4 GPA",
+    marks: null,
     period: "Aug 2018 – Sep 2021",
   },
 ];

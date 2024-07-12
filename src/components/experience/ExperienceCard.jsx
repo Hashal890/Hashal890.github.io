@@ -13,7 +13,7 @@ import {
 } from "@chakra-ui/react";
 import { LiaCentercode } from "react-icons/lia";
 
-const AboutCardExperienceDetails = ({
+const ExperienceCard = ({
   company,
   title,
   location,
@@ -66,4 +66,4 @@ const AboutCardExperienceDetails = ({
   );
 };
 
-export default AboutCardExperienceDetails;
+export default ExperienceCard;

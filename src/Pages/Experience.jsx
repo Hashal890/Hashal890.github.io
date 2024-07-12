@@ -1,21 +1,26 @@
-import { Box, Code, VStack } from "@chakra-ui/react";
 import React from "react";
-import AboutCardExperienceDetails from "../Components/AboutCardExperienceDetails";
+import { VStack } from "@chakra-ui/react";
+import ExperienceCard from "../components/experience/ExperienceCard";
 import { ExperienceDetails } from "../assets/data";
+import SectionHeading from "../components/common/SectionHeading";
 
 const Experience = () => {
   return (
-    <Box w={["95%", "95%", "90%", "75%"]} m="auto" mt="5" id={"experience"}>
-      <br />
-      <br />
-      <Code colorScheme="yellow" mb="1rem" fontSize="24px" borderRadius={"xl"}>
-        Experience
-      </Code>
+    <VStack
+      id={"experience"}
+      w={["95%", "95%", "90%", "75%"]}
+      m={"auto"}
+      justifyContent={"center"}
+      alignItems={"center"}
+      spacing={12}
+      mt={12}
+    >
+      <SectionHeading sectionName={"Experience"} />
       <VStack spacing="4" marginBottom="6" align="left" mx={[0, 0, 6]} mt="3">
         {ExperienceDetails.map((elem, index) => {
           const { id, company, title, location, roles, skills, period } = elem;
           return (
-            <AboutCardExperienceDetails
+            <ExperienceCard
               key={id}
               company={company}
               title={title}
@@ -27,7 +32,7 @@ const Experience = () => {
           );
         })}
       </VStack>
-    </Box>
+    </VStack>
   );
 };
 

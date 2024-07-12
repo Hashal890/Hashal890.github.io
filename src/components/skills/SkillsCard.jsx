@@ -1,5 +1,5 @@
-import { VStack, Image, Box, Text } from "@chakra-ui/react";
 import React from "react";
+import { VStack, Image, Box, Text } from "@chakra-ui/react";
 
 export default function SkillsCard({ link, name, color, icon }) {
   return (

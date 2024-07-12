@@ -7,7 +7,7 @@ import {
   Text,
   Code,
 } from "@chakra-ui/react";
-import Profile from "../assets/Harshal-Pardeshi-Profile-Photo.png";
+import Profile from "../../assets/Harshal-Pardeshi-Profile-Photo.png";
 
 const AboutMeIntroduction = () => {
   return (

@@ -13,8 +13,8 @@ import {
 import { FaMoon, FaSun, FaGithub } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
-import NavLink from "./NavLink";
-import { NavbarLinks } from "../assets/data.js";
+import NavLink from "./NavLink.jsx";
+import { NavbarLinks } from "../../assets/data.js";
 
 export default function Navbar() {
   const { toggleColorMode } = useColorMode();
@@ -29,32 +29,38 @@ export default function Navbar() {
         background: useColorModeValue("#FFFFFF", "#1A202C"),
         width: "100%",
       }}
-      className="navbar"
+      className={"navbar"}
     >
       <Box
         borderBottomColor={useColorModeValue("#FFFFFF", "#1A202C")}
-        boxShadow="md"
+        boxShadow={"md"}
       >
         <Flex
-          justifyContent="space-between"
-          alignItems="center"
-          w={"98%"}
-          pt="4"
-          pb="4"
-          maxW="container.lg"
-          mx="auto"
+          justifyContent={"space-between"}
+          alignItems={"center"}
+          w={["95%", "95%", "98%", "85%"]}
+          pt={4}
+          pb={4}
+          m={"auto"}
         >
           <IconButton
-            size="md"
+            size={"md"}
             icon={isOpen ? <AiOutlineClose /> : <GiHamburgerMenu />}
-            aria-label="Open Menu"
+            aria-label={"Open Menu"}
             display={["inherit", "inherit", "none"]}
             onClick={isOpen ? onClose : onOpen}
+            border={"1px dashed"}
+            borderColor={useColorModeValue("black", "white")}
           />
-          <HStack spacing="4" alignItems="center">
-            <HStack as="nav" spacing="4" display={{ base: "none", md: "flex" }}>
-              {NavbarLinks.map((link, i) => {
+          <HStack spacing={4} alignItems={"center"}>
+            <HStack
+              as={"nav"}
+              spacing={4}
+              display={{ base: "none", md: "flex" }}
+            >
+              {NavbarLinks.map((link) => {
                 const { id, to, name } = link;
+
                 return (
                   <NavLink
                     key={id}
@@ -66,38 +72,43 @@ export default function Navbar() {
               })}
             </HStack>
           </HStack>
-          <HStack alignItems="center">
+          <HStack alignItems={"center"}>
             <IconButton
               as={ChakraLink}
               href={"https://github.com/Hashal890"}
               target={"_blank"}
-              size="md"
+              size={"md"}
               icon={<FaGithub />}
-              aria-label="Github account"
+              aria-label={"Github account"}
               _hover={{
                 textDecoration: "none",
                 bg: useColorModeValue("gray.300", "blue.600"),
               }}
               bg={useColorModeValue("white", "gray.700")}
+              border={"1px dashed"}
+              borderColor={useColorModeValue("black", "white")}
             />
             <IconButton
-              variant="outline"
+              variant={"outline"}
               icon={useColorModeValue(<FaMoon />, <FaSun />)}
               onClick={toggleColorMode}
-              aria-label="toggle-dark-mode"
+              aria-label={"toggle-dark-mode"}
+              border={"1px dashed"}
+              borderColor={useColorModeValue("black", "white")}
             />
           </HStack>
         </Flex>
         {isOpen ? (
           <Box
-            pb="4"
-            w={["100%", "100%", "80%"]}
-            maxW="800"
+            pb={4}
+            w={["100%", "100%", "85%"]}
+            maxW={"800"}
             display={["inherit", "inherit", "none"]}
           >
-            <Stack as="nav" spacing="4" alignItems="center" w="">
+            <Stack as={"nav"} spacing={4} alignItems={"center"}>
               {NavbarLinks.map((link, i) => {
                 const { id, to, name } = link;
+
                 return (
                   <NavLink
                     key={id}

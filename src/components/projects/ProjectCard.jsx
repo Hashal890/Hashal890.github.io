@@ -27,90 +27,90 @@ export default function ProjectCard({
 }) {
   return (
     <Box
-      px="4"
-      py="5"
-      borderWidth="2px"
-      borderColor="gray.400"
+      px={4}
+      py={5}
+      borderWidth={"2px"}
+      borderColor={"gray.400"}
       _hover={{ shadow: "lg" }}
       bg={useColorModeValue("white", "gray.700")}
-      position="relative"
-      rounded="md"
+      position={"relative"}
+      rounded={"md"}
     >
-      <VStack justifyContent="space-between" alignItems="start">
+      <VStack justifyContent={"space-between"} alignItems={"start"}>
         <Image
           src={image}
           alt={title}
-          borderRadius="5px"
+          borderRadius={"5px"}
           m={"auto"}
           fallbackSrc={
             <Spinner
-              thickness="4px"
-              speed="0.65s"
-              emptyColor="gray.200"
-              color="blue.500"
-              size="4xl"
+              thickness={"4px"}
+              speed={"0.65s"}
+              emptyColor={"gray.200"}
+              color={"blue.500"}
+              size={"4xl"}
             />
           }
           w={"lg"}
         />
         <Stack
-          spacing="1"
-          pl="3"
-          align="left"
+          spacing={"1"}
+          pl={"3"}
+          align={"left"}
           pt={5}
           borderTop={"1px solid gray"}
         >
-          <Flex gap="1rem" align="center">
+          <Flex gap={"1rem"} align={"center"}>
             <FaGithubAlt />
             <Heading
-              align="left"
-              color="blue.400"
-              fontWeight="medium"
-              fontStyle="oblique"
-              fontSize="15"
+              align={"left"}
+              color={"blue.400"}
+              fontWeight={"medium"}
+              fontStyle={"oblique"}
+              fontSize={"15"}
             >
               {title}
             </Heading>
           </Flex>
           <Flex
-            pb="1"
-            spacing="1"
-            pt="3"
+            pb={"1"}
+            spacing={"1"}
+            pt={"3"}
             isInline
-            alignItems="center"
-            gap="0.25rem"
-            flexWrap="wrap"
+            alignItems={"center"}
+            gap={"0.25rem"}
+            flexWrap={"wrap"}
           >
             {techStack.map((language, index) => (
-              <Tag size="sm" padding="1" key={index + 1}>
+              <Tag size={"sm"} padding={"1"} key={index + 1}>
                 {language}
               </Tag>
             ))}
           </Flex>
-          <Text as="i" align="left" fontSize="sm" pb="1">
+          <Text as={"i"} align={"left"} fontSize={"sm"} pb={"1"}>
             {description}
           </Text>
           <Spacer />
-          <Flex m="auto" gap="1rem" alignItems="center">
-            <a href={githubUrl} target="_blank" rel="noreferrer">
+          <Flex m={"auto"} gap={"1rem"} alignItems={"center"}>
+            <a href={githubUrl} target={"_blank"} rel={"noreferrer"}>
               <Button
                 leftIcon={<SiGithub />}
-                colorScheme="whatsapp"
-                variant="solid"
+                colorScheme={"whatsapp"}
+                variant={"solid"}
                 _hover={{ textDecor: "none" }}
-                fontSize="small"
-                p="2"
+                fontSize={"small"}
+                p={"2"}
               >
                 View Code
               </Button>
             </a>
-            <a href={liveUrl} target="_blank" rel="noreferrer">
+            <a href={liveUrl} target={"_blank"} rel={"noreferrer"}>
               <Button
-                p="2"
-                fontSize="small"
+                p={"2"}
+                fontSize={"small"}
                 leftIcon={<BiWorld />}
-                colorScheme="linkedin"
-                variant="solid"
+                colorScheme={"linkedin"}
+                variant={"solid"}
                 _hover={{ textDecor: "none" }}
               >
                 View Deploy

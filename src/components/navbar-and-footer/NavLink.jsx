@@ -7,9 +7,9 @@ export default function NavLink({ to, name, onClick }) {
     <>
       {name === "Resume" ? (
         <a
-          href="https://drive.google.com/file/d/1pV8XBrEE6ZaN5BbITcfE215MNNCLl94z/view?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer"
+          href={"https://drive.google.com/file/d/1pV8XBrEE6ZaN5BbITcfE215MNNCLl94z/view?usp=sharing"}
+          target={"_blank"}
+          rel={"noopener noreferrer"}
           cursor={"pointer"}
         >
           Resume
@@ -23,10 +23,10 @@ export default function NavLink({ to, name, onClick }) {
           duration={500}
           >
           <Button
-            as="a"
-            variant="ghost"
-            colorScheme="gray"
-            size="sm"
+            as={"a"}
+            variant={"ghost"}
+            colorScheme={"gray"}
+            size={"sm"}
             cursor={"pointer"}
             onClick={onClick}
           >

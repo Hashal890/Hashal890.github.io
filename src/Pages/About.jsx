@@ -3,7 +3,7 @@ import { VStack } from "@chakra-ui/react";
 import AboutMeIntroduction from "../components/about/AboutMeIntroduction";
 import SectionHeading from "../components/common/SectionHeading";
 
-export default function About() {
+const About = () => {
   return (
     <VStack
       id={"about"}
@@ -19,4 +19,6 @@ export default function About() {
       <AboutMeIntroduction />
     </VStack>
   );
-}
+};
+
+export default About;

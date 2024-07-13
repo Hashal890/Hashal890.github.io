@@ -4,7 +4,7 @@ import Typist from "react-typist";
 import ResumeButtons from "../components/home/ResumeButtons";
 import WelcomeHeading from "../components/home/WelcomeHeading";
 
-export default function Home() {
+const Home = () => {
   return (
     <Flex
       id={"home"}
@@ -25,4 +25,6 @@ export default function Home() {
       <ResumeButtons />
     </Flex>
   );
-}
+};
+
+export default Home;

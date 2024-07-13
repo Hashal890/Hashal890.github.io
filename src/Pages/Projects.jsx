@@ -10,11 +10,11 @@ import ProjectCard from "../components/projects/ProjectCard";
 import { ProjectsList } from "../assets/data";
 import SectionHeading from "../components/common/SectionHeading";
 
-export default function Projects() {
+const Projects = () => {
   return (
     <VStack
       id={"projects"}
-      w={["97%", "97%", "95%", "80%"]}
+      w={["97%", "97%", "95%", "85", "85%"]}
       m={"auto"}
       justifyContent={"center"}
       alignItems={"center"}
@@ -24,35 +24,18 @@ export default function Projects() {
     >
       <SectionHeading sectionName={"Projects"} />
       <Tabs variant="soft-rounded" colorScheme="blue" align="center" w="100%">
-        <TabPanels minHeight={"50vh"}>
+        <TabPanels>
           <TabPanel px={0}>
-            <SimpleGrid columns={[1, 1, 2, 3]} spacing={4} mt={8}>
-              {ProjectsList.map((rep, index) => {
-                const {
-                  id,
-                  title,
-                  description,
-                  techStack,
-                  githubUrl,
-                  liveUrl,
-                  image,
-                } = rep;
-                return (
-                  <ProjectCard
-                    key={id}
-                    title={title}
-                    description={description}
-                    techStack={techStack}
-                    githubUrl={githubUrl}
-                    liveUrl={liveUrl}
-                    image={image}
-                  />
-                );
-              })}
+            <SimpleGrid columns={[1, 2, 2, 3, 4]} spacing={4} mt={8}>
+              {ProjectsList.map((rep, index) => (
+                <ProjectCard key={rep.id} {...rep} />
+              ))}
             </SimpleGrid>
           </TabPanel>
         </TabPanels>
       </Tabs>
     </VStack>
   );
-}
+};
+
+export default Projects;

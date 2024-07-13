@@ -4,7 +4,7 @@ import { SkillsList } from "../assets/data.js";
 import SkillsCard from "../components/skills/SkillsCard.jsx";
 import SectionHeading from "../components/common/SectionHeading.jsx";
 
-export default function Skills() {
+const Skills = () => {
   return (
     <VStack
       id={"skills"}
@@ -17,21 +17,13 @@ export default function Skills() {
       minH={"90vh"}
     >
       <SectionHeading sectionName={"Skills"} />
-      <SimpleGrid columns={[3, 4, 6]} spacing={4} mb={5}>
-        {SkillsList.map((skill) => {
-          const { id, link, name, color, icon } = skill;
-
-          return (
-            <SkillsCard
-              key={id}
-              link={link}
-              name={name}
-              color={color}
-              icon={icon}
-            />
-          );
-        })}
+      <SimpleGrid columns={[4, 5, 7]} spacing={4} mb={5}>
+        {SkillsList.map((skill) => (
+          <SkillsCard key={skill.id} {...skill} />
+        ))}
       </SimpleGrid>
     </VStack>
   );
-}
+};
+
+export default Skills;

@@ -1,16 +1,10 @@
 import React from "react";
-import {
-  Flex,
-  IconButton,
-  Link,
-  VStack,
-  Text,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import { Flex, VStack, Text, useColorModeValue, Box } from "@chakra-ui/react";
 import { ContactDetails } from "../assets/data";
 import SectionHeading from "../components/common/SectionHeading";
+import ContactIconWithLink from "../components/contact/ContactIconWithLink";
 
-export default function Contact() {
+const Contact = () => {
   return (
     <VStack
       id={"contact"}
@@ -23,8 +17,8 @@ export default function Contact() {
       minH={"70vh"}
     >
       <SectionHeading sectionName={"Let's chat!"} />
-      <Text
-        fontSize={"20"}
+      <Box
+        fontSize={20}
         color={useColorModeValue("gray.800", "gray.500")}
         textAlign={"center"}
         mb={10}
@@ -35,23 +29,14 @@ export default function Contact() {
         out to me via any of the platforms below:
         <Text mt={4}> Mobile Number: +918329729568</Text>
         <Text>Email-ID: pardeshiharshal90@gmail.com</Text>
-      </Text>
+      </Box>
       <Flex gap={3}>
-        {ContactDetails.map((contact, ind) => {
-          const { id, link, icon } = contact;
-          return (
-            <Link key={id} href={link} isExternal bg={"transparent"}>
-              <IconButton
-                colorScheme={"blue"}
-                variant={"outline"}
-                aria-label={"contact-button"}
-                size={"lg"}
-                icon={icon}
-              />
-            </Link>
-          );
-        })}
+        {ContactDetails.map((contact) => (
+          <ContactIconWithLink key={contact.id} {...contact} />
+        ))}
       </Flex>
     </VStack>
   );
-}
+};
+
+export default Contact;

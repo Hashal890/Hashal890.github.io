@@ -25,19 +25,9 @@ const EducationPage = () => {
         w={"100%"}
         p={2}
       >
-        {EducationDetails.map((elem, index) => {
-          const { id, title, role, marks, period } = elem;
-
-          return (
-            <EducationCard
-              key={id}
-              title={title}
-              role={role}
-              marks={marks}
-              period={period}
-            />
-          );
-        })}
+        {EducationDetails.map((elem) => (
+          <EducationCard key={elem.id} {...elem} />
+        ))}
       </VStack>
     </VStack>
   );

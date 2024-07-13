@@ -16,7 +16,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import NavLink from "./NavLink.jsx";
 import { NavbarLinks } from "../../assets/data.js";
 
-export default function Navbar() {
+const Navbar = () => {
   const { toggleColorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -38,7 +38,7 @@ export default function Navbar() {
         <Flex
           justifyContent={"space-between"}
           alignItems={"center"}
-          w={["95%", "95%", "98%", "85%"]}
+          w={["95%", "95%", "98%", "98%", "85%"]}
           pt={4}
           pb={4}
           m={"auto"}
@@ -58,18 +58,9 @@ export default function Navbar() {
               spacing={4}
               display={{ base: "none", md: "flex" }}
             >
-              {NavbarLinks.map((link) => {
-                const { id, to, name } = link;
-
-                return (
-                  <NavLink
-                    key={id}
-                    to={to}
-                    name={name}
-                    onClick={() => onClose()}
-                  />
-                );
-              })}
+              {NavbarLinks.map((link) => (
+                <NavLink key={link.id} {...link} onClick={() => onClose()} />
+              ))}
             </HStack>
           </HStack>
           <HStack alignItems={"center"}>
@@ -106,22 +97,15 @@ export default function Navbar() {
             display={["inherit", "inherit", "none"]}
           >
             <Stack as={"nav"} spacing={4} alignItems={"center"}>
-              {NavbarLinks.map((link, i) => {
-                const { id, to, name } = link;
-
-                return (
-                  <NavLink
-                    key={id}
-                    to={to}
-                    name={name}
-                    onClick={() => onClose()}
-                  />
-                );
-              })}
+              {NavbarLinks.map((link) => (
+                <NavLink key={link.id} {...link} onClick={() => onClose()} />
+              ))}
             </Stack>
           </Box>
         ) : null}
       </Box>
     </div>
   );
-}
+};
+
+export default Navbar;

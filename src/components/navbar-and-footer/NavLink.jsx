@@ -2,12 +2,14 @@ import React from "react";
 import { Button } from "@chakra-ui/react";
 import { Link as ScrollLink } from "react-scroll";
 
-export default function NavLink({ to, name, onClick }) {
+const NavLink = ({ to, name, onClick }) => {
   return (
     <>
       {name === "Resume" ? (
         <a
-          href={"https://drive.google.com/file/d/1pV8XBrEE6ZaN5BbITcfE215MNNCLl94z/view?usp=sharing"}
+          href={
+            "https://drive.google.com/file/d/1pV8XBrEE6ZaN5BbITcfE215MNNCLl94z/view?usp=sharing"
+          }
           target={"_blank"}
           rel={"noopener noreferrer"}
           cursor={"pointer"}
@@ -21,7 +23,7 @@ export default function NavLink({ to, name, onClick }) {
           smooth={true}
           offset={-70}
           duration={500}
-          >
+        >
           <Button
             as={"a"}
             variant={"ghost"}
@@ -36,4 +38,6 @@ export default function NavLink({ to, name, onClick }) {
       )}
     </>
   );
-}
+};
+
+export default NavLink;

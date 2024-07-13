@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Box,
   useColorModeValue,
@@ -7,118 +7,126 @@ import {
   Flex,
   Stack,
   Heading,
-  Button,
   Spacer,
   Image,
   VStack,
   Spinner,
 } from "@chakra-ui/react";
-import { FaGithubAlt } from "react-icons/fa";
 import { SiGithub } from "react-icons/si";
 import { BiWorld } from "react-icons/bi";
+import ProjectCommonButton from "./ProjectCommonButton";
 
-export default function ProjectCard({
+const ProjectCard = ({
+  id,
   title,
   description,
   techStack,
   githubUrl,
   liveUrl,
   image,
-}) {
+}) => {
+  const [loading, setLoading] = useState(true);
+
   return (
     <Box
-      px={4}
-      py={5}
+      px={3}
+      py={4}
       borderWidth={"2px"}
       borderColor={"gray.400"}
       _hover={{ shadow: "lg" }}
       bg={useColorModeValue("white", "gray.700")}
-      position={"relative"}
       rounded={"md"}
     >
       <VStack justifyContent={"space-between"} alignItems={"start"}>
-        <Image
-          src={image}
-          alt={title}
-          borderRadius={"5px"}
-          m={"auto"}
-          fallbackSrc={
+        {loading && (
+          <Flex
+            justifyContent={"center"}
+            alignItems={"center"}
+            p={8}
+            minH={"200px"}
+          >
             <Spinner
               thickness={"4px"}
               speed={"0.65s"}
               emptyColor={"gray.200"}
               color={"blue.500"}
-              size={"4xl"}
+              size={"xl"}
             />
-          }
+          </Flex>
+        )}
+        <Image
+          src={image}
+          alt={title}
+          borderRadius={"5px"}
+          m={"auto"}
+          onLoad={() => setLoading(false)}
+          onError={() => setLoading(false)}
+          display={loading ? "none" : "block"}
           w={"lg"}
+          minH={"170px"}
         />
         <Stack
-          spacing={"1"}
-          pl={"3"}
+          spacing={1}
+          pl={2}
           align={"left"}
           pt={5}
           borderTop={"1px solid gray"}
+          flexGrow={1}
         >
-          <Flex gap={"1rem"} align={"center"}>
-            <FaGithubAlt />
-            <Heading
-              align={"left"}
-              color={"blue.400"}
-              fontWeight={"medium"}
-              fontStyle={"oblique"}
-              fontSize={"15"}
-            >
-              {title}
-            </Heading>
-          </Flex>
+          <Heading
+            align={"left"}
+            color={"blue.400"}
+            fontWeight={"medium"}
+            fontSize={17}
+          >
+            {title}
+          </Heading>
           <Flex
-            pb={"1"}
-            spacing={"1"}
-            pt={"3"}
+            pb={1}
+            spacing={1}
+            mt={3}
             isInline
             alignItems={"center"}
             gap={"0.25rem"}
             flexWrap={"wrap"}
           >
             {techStack.map((language, index) => (
-              <Tag size={"sm"} padding={"1"} key={index + 1}>
+              <Tag fontSize={"x-small"} p={1} key={index + 1}>
                 {language}
               </Tag>
             ))}
           </Flex>
-          <Text as={"i"} align={"left"} fontSize={"sm"} pb={"1"}>
+          <Text align={"left"} fontSize={"xs"} pb={1} mt={2}>
             {description}
           </Text>
           <Spacer />
-          <Flex m={"auto"} gap={"1rem"} alignItems={"center"}>
-            <a href={githubUrl} target={"_blank"} rel={"noreferrer"}>
-              <Button
-                leftIcon={<SiGithub />}
-                colorScheme={"whatsapp"}
-                variant={"solid"}
-                _hover={{ textDecor: "none" }}
-                fontSize={"small"}
-                p={"2"}
-              >
-                View Code
-              </Button>
-            </a>
-            <a href={liveUrl} target={"_blank"} rel={"noreferrer"}>
-              <Button
-                p={"2"}
-                fontSize={"small"}
-                leftIcon={<BiWorld />}
-                colorScheme={"linkedin"}
-                variant={"solid"}
-                _hover={{ textDecor: "none" }}
-              >
-                View Deploy
-              </Button>
-            </a>
+          <Flex
+            mt={2}
+            gap={"1rem"}
+            justifyContent={"left"}
+            alignItems={"center"}
+          >
+            <ProjectCommonButton
+              url={
+                id === 2
+                  ? "https://drive.google.com/file/d/1FHE58HdQP0wHQO9eSHANrUP-xos2DSnY/view"
+                  : githubUrl
+              }
+              icon={<SiGithub />}
+              color={"whatsapp"}
+              title={"View Code"}
+            />
+            <ProjectCommonButton
+              url={liveUrl}
+              icon={<BiWorld />}
+              color={"linkedin"}
+              title={"View Deploy"}
+            />
           </Flex>
         </Stack>
       </VStack>
     </Box>
   );
-}
+};
+
+export default ProjectCard;

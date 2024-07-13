@@ -1,10 +1,10 @@
-import { Code } from "@chakra-ui/react";
+import { Code, useColorModeValue } from "@chakra-ui/react";
 import React from "react";
 
 const SectionHeading = ({ sectionName }) => {
   return (
     <Code
-      colorScheme={"yellow"}
+      colorScheme={useColorModeValue("linkedin", "yellow")}
       fontSize={"24px"}
       borderRadius={8}
       m={"auto"}

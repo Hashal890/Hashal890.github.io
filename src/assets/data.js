@@ -275,27 +275,27 @@ export const ProjectsList = [
     image:
       "https://raw.githubusercontent.com/Hashal890/Exclusive-Yoox-Clone/main/assets/mensProductsPage.png",
   },
-  {
-    id: 2,
-    title: "TimeZone Convertor and Scheduler",
-    description:
-      "TimeZone Convertor and Scheduler is a React-based tool for converting time between multiple time zones. Features include a responsive time slider, date picker, dark mode, drag-and-drop reordering, and Google Meet scheduling.",
-    techStack: [
-      "React.js",
-      "Moment.js",
-      "React Select",
-      "React Datepicker",
-      "Hello Pangea Dnd",
-      "JavaScript",
-      "Axios",
-      "Chakra-UI",
-      "React Icons",
-    ],
-    githubUrl: "https://github.com/Hashal890/timezone-convertor-and-scheduler",
-    liveUrl: "https://timezone-convertor-and-scheduler.vercel.app/",
-    image:
-      "https://raw.githubusercontent.com/Hashal890/timezone-convertor-and-scheduler/main/src/assets/project-demonstration.gif",
-  },
+  // {
+  //   id: 2,
+  //   title: "TimeZone Convertor and Scheduler",
+  //   description:
+  //     "TimeZone Convertor and Scheduler is a React-based tool for converting time between multiple time zones. Features include a responsive time slider, date picker, dark mode, drag-and-drop reordering, and Google Meet scheduling.",
+  //   techStack: [
+  //     "React.js",
+  //     "Moment.js",
+  //     "React Select",
+  //     "React Datepicker",
+  //     "Hello Pangea Dnd",
+  //     "JavaScript",
+  //     "Axios",
+  //     "Chakra-UI",
+  //     "React Icons",
+  //   ],
+  //   githubUrl: "https://github.com/Hashal890/timezone-convertor-and-scheduler",
+  //   liveUrl: "https://timezone-convertor-and-scheduler.vercel.app/",
+  //   image:
+  //     "https://raw.githubusercontent.com/Hashal890/timezone-convertor-and-scheduler/main/src/assets/project-demonstration.gif",
+  // },
   {
     id: 3,
     title: "Multilingual Text and Speech Translator",
@@ -513,17 +513,17 @@ export const ProjectsList = [
     image:
       "https://raw.githubusercontent.com/Hashal890/Hotstar-Search-Bar/main/assets/trendingMovies.png",
   },
-  // {
-  //   id: 17,
-  //   title: "Star Wars Characters Information",
-  //   description:
-  //     "Developed a Star Wars character search app, enabling users to easily find and explore details of their favorite characters from the Star Wars universe. Search, discover, and learn about iconic characters with ease!",
-  //   techStack: ["HTML", "CSS", "JavaScript"],
-  //   githubUrl: "https://github.com/Hashal890/Star-Wars",
-  //   liveUrl: "https://star-wars-characters-information.netlify.app/",
-  //   image:
-  //     "https://raw.githubusercontent.com/Hashal890/Star-Wars/main/assets/searchResults.png",
-  // },
+  {
+    id: 17,
+    title: "Star Wars Characters Information",
+    description:
+      "Developed a Star Wars character search app, enabling users to easily find and explore details of their favorite characters from the Star Wars universe. Search, discover, and learn about iconic characters with ease!",
+    techStack: ["HTML", "CSS", "JavaScript"],
+    githubUrl: "https://github.com/Hashal890/Star-Wars",
+    liveUrl: "https://star-wars-characters-information.netlify.app/",
+    image:
+      "https://raw.githubusercontent.com/Hashal890/Star-Wars/main/assets/searchResults.png",
+  },
 ];
 
 export const EducationDetails = [

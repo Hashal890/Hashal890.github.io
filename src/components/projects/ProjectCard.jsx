@@ -107,10 +107,7 @@ const ProjectCard = ({
             alignItems={"center"}
           >
             <ProjectCommonButton
-              url={
-                id === 2
-                  ? "https://drive.google.com/file/d/1FHE58HdQP0wHQO9eSHANrUP-xos2DSnY/view"
-                  : githubUrl
+              url={githubUrl
               }
               icon={<SiGithub />}
               color={"whatsapp"}

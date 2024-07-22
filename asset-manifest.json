@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.460f3e17.css",
-    "main.js": "/static/js/main.c6445f79.js",
+    "main.js": "/static/js/main.f58bb930.js",
     "static/js/787.d92b2039.chunk.js": "/static/js/787.d92b2039.chunk.js",
     "static/media/Harshal-Pardeshi-Profile-Photo.png": "/static/media/Harshal-Pardeshi-Profile-Photo.b23f4c6cc2319a93fe9b.png",
     "index.html": "/index.html",
     "main.460f3e17.css.map": "/static/css/main.460f3e17.css.map",
-    "main.c6445f79.js.map": "/static/js/main.c6445f79.js.map",
+    "main.f58bb930.js.map": "/static/js/main.f58bb930.js.map",
     "787.d92b2039.chunk.js.map": "/static/js/787.d92b2039.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.460f3e17.css",
-    "static/js/main.c6445f79.js"
+    "static/js/main.f58bb930.js"
   ]
 }

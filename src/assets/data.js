@@ -275,27 +275,27 @@ export const ProjectsList = [
     image:
       "https://raw.githubusercontent.com/Hashal890/Exclusive-Yoox-Clone/main/assets/mensProductsPage.png",
   },
-  // {
-  //   id: 2,
-  //   title: "TimeZone Convertor and Scheduler",
-  //   description:
-  //     "TimeZone Convertor and Scheduler is a React-based tool for converting time between multiple time zones. Features include a responsive time slider, date picker, dark mode, drag-and-drop reordering, and Google Meet scheduling.",
-  //   techStack: [
-  //     "React.js",
-  //     "Moment.js",
-  //     "React Select",
-  //     "React Datepicker",
-  //     "Hello Pangea Dnd",
-  //     "JavaScript",
-  //     "Axios",
-  //     "Chakra-UI",
-  //     "React Icons",
-  //   ],
-  //   githubUrl: "https://github.com/Hashal890/timezone-convertor-and-scheduler",
-  //   liveUrl: "https://timezone-convertor-and-scheduler.vercel.app/",
-  //   image:
-  //     "https://raw.githubusercontent.com/Hashal890/timezone-convertor-and-scheduler/main/src/assets/project-demonstration.gif",
-  // },
+  {
+    id: 2,
+    title: "TimeZone Convertor and Scheduler",
+    description:
+      "TimeZone Convertor and Scheduler is a React-based tool for converting time between multiple time zones. Features include a responsive time slider, date picker, dark mode, drag-and-drop reordering, and Google Meet scheduling.",
+    techStack: [
+      "React.js",
+      "Moment.js",
+      "React Select",
+      "React Datepicker",
+      "Hello Pangea Dnd",
+      "JavaScript",
+      "Axios",
+      "Chakra-UI",
+      "React Icons",
+    ],
+    githubUrl: "https://github.com/Hashal890/timezone-convertor-and-scheduler",
+    liveUrl: "https://timezone-convertor-and-scheduler.vercel.app/",
+    image:
+      "https://raw.githubusercontent.com/Hashal890/timezone-convertor-and-scheduler/main/src/assets/project-demonstration.gif",
+  },
   {
     id: 3,
     title: "Multilingual Text and Speech Translator",
@@ -317,6 +317,32 @@ export const ProjectsList = [
     liveUrl: "https://multilingual-text-and-speech-translator.vercel.app/",
     image:
       "https://raw.githubusercontent.com/Hashal890/multilingual-text-and-speech-translator/main/screenshots/home-page-result.jpg",
+  },
+  {
+    id: 18,
+    title: "AI-Powered Content Summarization & Analysis Tool",
+    description:
+      "This project demonstrates an AI-powered content summarization and analysis tool using Next.js for the front-end and Node.js (Express.js) for the back-end. The application allows users to upload text content, receive a summarized version with key insights, and display these insights clearly. Optionally, the project can be extended to include data visualizations and user authentication.",
+    techStack: [
+      "Next.js",
+      "Express.js",
+      "JavaScript",
+      "Multer",
+      "Natural",
+      "Sentiment",
+      "Node Summarizer",
+      "Axios",
+      "Chakra-UI",
+      "React Icons",
+      "CSS",
+      "HTML",
+    ],
+    githubUrl:
+      "https://github.com/Hashal890/ai-content-summarization-and-analysis-tool",
+    liveUrl:
+      "https://ai-content-summarization-and-analysis-tool-frontend.vercel.app/",
+    image:
+      "https://raw.githubusercontent.com/Hashal890/ai-content-summarization-and-analysis-tool/main/project-demonstration/image-preview.gif",
   },
   {
     id: 4,

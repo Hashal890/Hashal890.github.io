@@ -7,7 +7,6 @@ import {
   Flex,
   Stack,
   Heading,
-  Spacer,
   Image,
   VStack,
   Spinner,
@@ -36,8 +35,15 @@ const ProjectCard = ({
       _hover={{ shadow: "lg" }}
       bg={useColorModeValue("white", "gray.700")}
       rounded={"md"}
+      display="flex"
+      flexDirection="column"
+      justifyContent="space-between"
     >
-      <VStack justifyContent={"space-between"} alignItems={"start"}>
+      <VStack
+        justifyContent={"space-between"}
+        alignItems={"start"}
+        flexGrow={1}
+      >
         {loading && (
           <Flex
             justifyContent={"center"}
@@ -99,29 +105,27 @@ const ProjectCard = ({
           <Text align={"left"} fontSize={"xs"} pb={1} mt={2}>
             {description}
           </Text>
-          <Spacer />
-          <Flex
-            mt={2}
-            gap={"1rem"}
-            justifyContent={"left"}
-            alignItems={"center"}
-          >
-            <ProjectCommonButton
-              url={githubUrl
-              }
-              icon={<SiGithub />}
-              color={"whatsapp"}
-              title={"View Code"}
-            />
-            <ProjectCommonButton
-              url={liveUrl}
-              icon={<BiWorld />}
-              color={"linkedin"}
-              title={"View Deploy"}
-            />
-          </Flex>
         </Stack>
       </VStack>
+      <Flex
+        mt={2}
+        gap={"1rem"}
+        justifyContent={"center"}
+        alignItems={"center"}
+      >
+        <ProjectCommonButton
+          url={githubUrl}
+          icon={<SiGithub />}
+          color={"whatsapp"}
+          title={"View Code"}
+        />
+        <ProjectCommonButton
+          url={liveUrl}
+          icon={<BiWorld />}
+          color={"linkedin"}
+          title={"View Deploy"}
+        />
+      </Flex>
     </Box>
   );
 };

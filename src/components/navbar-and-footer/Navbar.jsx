@@ -21,90 +21,66 @@ const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <div
-      style={{
-        position: "fixed",
-        top: "0",
-        zIndex: "10000",
-        background: useColorModeValue("#FFFFFF", "#1A202C"),
-        width: "100%",
-      }}
-      className={"navbar"}
+    <Box
+      as={"nav"}
+      position={"fixed"}
+      top={0}
+      width={"100%"}
+      zIndex={"10000"}
+      bg={useColorModeValue("white", "gray.800")}
+      boxShadow={"md"}
     >
-      <Box
-        borderBottomColor={useColorModeValue("#FFFFFF", "#1A202C")}
-        boxShadow={"md"}
+      <Flex
+        justifyContent={"space-between"}
+        alignItems={"center"}
+        w={["95%", "95%", "98%", "98%", "85%"]}
+        py={4}
+        mx={"auto"}
       >
-        <Flex
-          justifyContent={"space-between"}
-          alignItems={"center"}
-          w={["95%", "95%", "98%", "98%", "85%"]}
-          pt={4}
-          pb={4}
-          m={"auto"}
-        >
+        <IconButton
+          size={"md"}
+          icon={isOpen ? <AiOutlineClose /> : <GiHamburgerMenu />}
+          aria-label={"Open Menu"}
+          display={{ base: "inherit", lg: "none" }}
+          onClick={isOpen ? onClose : onOpen}
+        />
+        <HStack spacing={4} alignItems={"center"}>
+          <HStack as={"nav"} spacing={4} display={{ base: "none", lg: "flex" }}>
+            {NavbarLinks.map((link) => (
+              <NavLink key={link.id} {...link} onClick={onClose} />
+            ))}
+          </HStack>
+        </HStack>
+        <HStack alignItems={"center"}>
           <IconButton
+            as={ChakraLink}
+            href={"https://github.com/Hashal890"}
+            target={"_blank"}
             size={"md"}
-            icon={isOpen ? <AiOutlineClose /> : <GiHamburgerMenu />}
-            aria-label={"Open Menu"}
-            display={["inherit", "inherit", "none"]}
-            onClick={isOpen ? onClose : onOpen}
-            border={"1px dashed"}
-            borderColor={useColorModeValue("black", "white")}
+            icon={<FaGithub />}
+            aria-label={"Github account"}
+            bg={useColorModeValue("white", "gray.700")}
+            _hover={{ bg: useColorModeValue("gray.300", "blue.600") }}
           />
-          <HStack spacing={4} alignItems={"center"}>
-            <HStack
-              as={"nav"}
-              spacing={4}
-              display={{ base: "none", md: "flex" }}
-            >
-              {NavbarLinks.map((link) => (
-                <NavLink key={link.id} {...link} onClick={() => onClose()} />
-              ))}
-            </HStack>
-          </HStack>
-          <HStack alignItems={"center"}>
-            <IconButton
-              as={ChakraLink}
-              href={"https://github.com/Hashal890"}
-              target={"_blank"}
-              size={"md"}
-              icon={<FaGithub />}
-              aria-label={"Github account"}
-              _hover={{
-                textDecoration: "none",
-                bg: useColorModeValue("gray.300", "blue.600"),
-              }}
-              bg={useColorModeValue("white", "gray.700")}
-              border={"1px dashed"}
-              borderColor={useColorModeValue("black", "white")}
-            />
-            <IconButton
-              variant={"outline"}
-              icon={useColorModeValue(<FaMoon />, <FaSun />)}
-              onClick={toggleColorMode}
-              aria-label={"toggle-dark-mode"}
-              border={"1px dashed"}
-              borderColor={useColorModeValue("black", "white")}
-            />
-          </HStack>
-        </Flex>
-        {isOpen ? (
-          <Box
-            pb={4}
-            w={["100%", "100%", "85%"]}
-            maxW={"800"}
-            display={["inherit", "inherit", "none"]}
-          >
-            <Stack as={"nav"} spacing={4} alignItems={"center"}>
-              {NavbarLinks.map((link) => (
-                <NavLink key={link.id} {...link} onClick={() => onClose()} />
-              ))}
-            </Stack>
-          </Box>
-        ) : null}
-      </Box>
-    </div>
+          <IconButton
+            variant={"outline"}
+            icon={useColorModeValue(<FaMoon />, <FaSun />)}
+            onClick={toggleColorMode}
+            aria-label={"Toggle Dark Mode"}
+            _hover={{ bg: useColorModeValue("gray.300", "blue.600") }}
+          />
+        </HStack>
+      </Flex>
+      {isOpen && (
+        <Box pb={4} display={{ base: "block", lg: "none" }}>
+          <Stack as={"nav"} spacing={4} alignItems={"center"}>
+            {NavbarLinks.map((link) => (
+              <NavLink key={link.id} {...link} onClick={onClose} />
+            ))}
+          </Stack>
+        </Box>
+      )}
+    </Box>
   );
 };
 

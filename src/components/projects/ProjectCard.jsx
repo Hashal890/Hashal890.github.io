@@ -97,22 +97,28 @@ const ProjectCard = ({
             flexWrap={"wrap"}
           >
             {techStack.map((language, index) => (
-              <Tag fontSize={"x-small"} p={1} key={index + 1}>
+              <Tag
+                fontSize={"x-small"}
+                p={1}
+                key={index + 1}
+                colorScheme={"whatsapp"}
+              >
                 {language}
               </Tag>
             ))}
           </Flex>
-          <Text align={"left"} fontSize={"xs"} pb={1} mt={2}>
+          <Text
+            align={"left"}
+            fontSize={"xs"}
+            pb={1}
+            mt={2}
+            color={useColorModeValue("gray.700", "wheat")}
+          >
             {description}
           </Text>
         </Stack>
       </VStack>
-      <Flex
-        mt={2}
-        gap={"1rem"}
-        justifyContent={"center"}
-        alignItems={"center"}
-      >
+      <Flex mt={2} gap={"1rem"} justifyContent={"center"} alignItems={"center"}>
         <ProjectCommonButton
           url={githubUrl}
           icon={<SiGithub />}

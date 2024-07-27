@@ -3,7 +3,7 @@ import { VStack } from "@chakra-ui/react";
 import SectionHeading from "../components/common/SectionHeading";
 import GitHubCommitsInfo from "../components/github-stats/GitHubCommitsInfo";
 import GitHubCalendarCreator from "../components/github-stats/GitHubCalendarCreator";
-import CodingStatistics from "../components/github-stats/CodingStatistics";
+// import CodingStatistics from "../components/github-stats/CodingStatistics";
 
 const GithubStatistics = () => {
   return (
@@ -20,7 +20,7 @@ const GithubStatistics = () => {
       <SectionHeading sectionName={"GitHub Stats"} />
       <GitHubCommitsInfo />
       <GitHubCalendarCreator />
-      <CodingStatistics />
+      {/* <CodingStatistics /> */}
     </VStack>
   );
 };

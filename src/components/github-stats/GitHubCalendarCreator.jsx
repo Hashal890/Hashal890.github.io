@@ -6,7 +6,7 @@ const GitHubCalendarCreator = () => {
   return (
     <Flex justifyContent={"center"} alignContent={"center"}>
       <GitHubCalendar
-        username="Hashal890"
+        username={"Hashal890"}
         blockSize={15}
         blockMargin={5}
         fontSize={16}

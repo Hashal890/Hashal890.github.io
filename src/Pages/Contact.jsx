@@ -1,8 +1,8 @@
 import React from "react";
 import { Flex, VStack, Text, useColorModeValue, Box } from "@chakra-ui/react";
-import { ContactDetails } from "../assets/data";
-import SectionHeading from "../components/common/SectionHeading";
-import ContactIconWithLink from "../components/contact/ContactIconWithLink";
+import { ContactDetails } from "../assets/data.js";
+import SectionHeading from "../components/common/SectionHeading.jsx";
+import ContactIconWithLink from "../components/contact/ContactIconWithLink.jsx";
 
 const Contact = () => {
   return (
@@ -23,14 +23,21 @@ const Contact = () => {
         textAlign={"center"}
         mb={10}
       >
-        👋 I'm actively seeking new opportunities in Full Stack Web Development
-        and would love to hear from you! Whether you have an exciting project
-        idea, a job opportunity, or simply want to connect, feel free to reach
-        out to me via any of the platforms below:
-        <Text mt={4}> Mobile Number: +918329729568</Text>
-        <Text>Email-ID: pardeshiharshal90@gmail.com</Text>
+        I'm currently working as a{" "}
+        <strong>Software Development Engineer I</strong> and actively
+        seeking new opportunities in <strong>Full Stack Web Development</strong>
+        . I'm eager to join a team where I can contribute meaningfully, grow
+        technically, and work on impactful products.
+        <br />
+        <br />
+        If you have a role in mind or would like to collaborate, feel free to
+        reach out using the platforms below:
+        <br />
+        <br />
+        <Text fontWeight="medium">📞 Mobile: +91 8329729568</Text>
+        <Text fontWeight="medium">📧 Email: pardeshiharshal90@gmail.com</Text>
       </Box>
-      <Flex gap={3}>
+      <Flex gap={4} wrap="wrap" justify="center">
         {ContactDetails.map((contact) => (
           <ContactIconWithLink key={contact.id} {...contact} />
         ))}

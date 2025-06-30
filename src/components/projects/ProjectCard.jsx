@@ -13,7 +13,7 @@ import {
 } from "@chakra-ui/react";
 import { SiGithub } from "react-icons/si";
 import { BiWorld } from "react-icons/bi";
-import ProjectCommonButton from "./ProjectCommonButton";
+import ProjectCommonButton from "./ProjectCommonButton.jsx";
 
 const ProjectCard = ({
   id,
@@ -35,9 +35,9 @@ const ProjectCard = ({
       _hover={{ shadow: "lg" }}
       bg={useColorModeValue("white", "gray.700")}
       rounded={"md"}
-      display="flex"
-      flexDirection="column"
-      justifyContent="space-between"
+      display={"flex"}
+      flexDirection={"column"}
+      justifyContent={"space-between"}
     >
       <VStack
         justifyContent={"space-between"}

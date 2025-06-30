@@ -1,5 +1,5 @@
-import { Code, Text, VStack } from "@chakra-ui/react";
 import React from "react";
+import { Code, Text, VStack } from "@chakra-ui/react";
 
 const StatisticsCard = ({ count, title, subject }) => {
   return (
@@ -14,11 +14,11 @@ const StatisticsCard = ({ count, title, subject }) => {
         borderColor={"blue.400"}
         rounded={"xl"}
         _hover={{ shadow: "md" }}
-        p={"10"}
-        pb={"20"}
-        pt={"20"}
+        p={10}
+        pb={20}
+        pt={20}
       >
-        <Code fontSize={["xl", "2xl"]} borderRadius="30px" colorScheme="pink">
+        <Code fontSize={["xl", "2xl"]} borderRadius={"30px"} colorScheme={"pink"}>
           {count}
         </Code>
         <Text fontSize={["sm", "md"]} textAlign={"center"} fontWeight={500}>

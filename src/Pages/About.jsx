@@ -1,7 +1,7 @@
 import React from "react";
 import { VStack } from "@chakra-ui/react";
-import AboutMeIntroduction from "../components/about/AboutMeIntroduction";
-import SectionHeading from "../components/common/SectionHeading";
+import AboutMeIntroduction from "../components/about/AboutMeIntroduction.jsx";
+import SectionHeading from "../components/common/SectionHeading.jsx";
 
 const About = () => {
   return (

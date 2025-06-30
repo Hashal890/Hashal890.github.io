@@ -1,8 +1,8 @@
 import React from "react";
 import { Flex, Code } from "@chakra-ui/react";
 import Typist from "react-typist";
-import ResumeButtons from "../components/home/ResumeButtons";
-import WelcomeHeading from "../components/home/WelcomeHeading";
+import ResumeButtons from "../components/home/ResumeButtons.jsx";
+import WelcomeHeading from "../components/home/WelcomeHeading.jsx";
 
 const Home = () => {
   return (
@@ -14,7 +14,7 @@ const Home = () => {
       alignItems={"center"}
       w={"100%"}
       mt={[18, 8]}
-      minH={"90vh"}
+      minH={"92vh"}
     >
       <WelcomeHeading />
       <Typist>

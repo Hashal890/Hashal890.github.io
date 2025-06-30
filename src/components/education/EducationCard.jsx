@@ -21,19 +21,19 @@ const EducationCard = ({ title, role, marks, period }) => {
       position={"relative"}
       rounded={"md"}
     >
-      <Flex justifyContent="space-between">
-        <Stack spacing="1" pl="3" align="left">
-          <Heading align="left" fontSize="15">
+      <Flex justifyContent={"space-between"}>
+        <Stack spacing={1} pl={3} align={"left"}>
+          <Heading align={"left"} fontSize={15}>
             {title}
           </Heading>
-          <Text color="gray.400" fontSize="12" align="left">
+          <Text color={"gray.400"} fontSize={12} align={"left"}>
             {period}
           </Text>
-          <Text as="i" align="left" fontSize="sm">
+          <Text as={"i"} align={"left"} fontSize={"sm"}>
             {role}
           </Text>
           {marks && (
-            <Tag size="sm" padding="0 3px" w={"54px"}>
+            <Tag size={"sm"} padding={"0 3px"} w={"54px"}>
               {marks}
             </Tag>
           )}

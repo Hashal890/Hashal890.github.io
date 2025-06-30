@@ -1,7 +1,7 @@
 import { SimpleGrid } from "@chakra-ui/react";
 import React from "react";
-import { Statistics } from "../../assets/data";
-import StatisticsCard from "./StatisticsCard";
+import { Statistics } from "../../assets/data.js";
+import StatisticsCard from "./StatisticsCard.jsx";
 
 const CodingStatistics = () => {
   return (

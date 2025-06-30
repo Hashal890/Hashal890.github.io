@@ -13,48 +13,67 @@ const AboutMeIntroduction = () => {
   return (
     <Flex
       direction={["column", "column", "row"]}
-      m="auto"
+      m={"auto"}
       w={"100%"}
-      align="center"
+      align={"center"}
     >
       <Image
         w={["230px", "300px"]}
         h={["250px", "300px"]}
         src={Profile}
-        alt="Harshal Image"
-        loading="eager"
-        mb="4"
+        alt={"Harshal Image"}
+        loading={"eager"}
+        mb={4}
         display={["block", "block", "none"]}
-        alignSelf="center"
+        alignSelf={"center"}
         borderRadius={"20px"}
       />
-      <Box p="4" mr="4" w={"full"} maxW="800px">
+      <Box p={4} mr={4} w={"full"} maxW={"800px"}>
         <Text
           pr={{ base: 0, md: 16 }}
           mb={4}
           fontSize={{ base: "md", md: "lg" }}
           color={useColorModeValue("brand.600", "gray.400")}
-          letterSpacing="wider"
-          textAlign="start"
-          fontFamily="body"
+          letterSpacing={"wider"}
+          textAlign={"start"}
+          fontFamily={"body"}
         >
           <span>
-            A <Code colorScheme="green">Full Stack Web Developer</Code> with a
-            total of 1 year of hands-on experience in full-stack web
-            development. This includes 7 months from Masai School and an
-            additional 5 months of personal project building on both frontend
-            and backend technologies. Currently pursuing my B.Sc. in Computer
-            Science from BITS Pilani, I am ready to relocate for the right
-            opportunity.
+            A <Code colorScheme={"green"}>Full Stack Web Developer</Code>{" "}
+            currently working as an <strong>SDE-I at Smart Ship© Hub</strong>,
+            where I’m contributing to the development of scalable and
+            high-performance web applications. I bring a strong foundation in
+            the <strong>MERN stack</strong>, honed through intensive, full-time
+            training at <strong>Masai School</strong> and strengthened by
+            real-world experience in a fast-paced, product-driven environment.
           </span>
           <br />
           <br />
           <span>
-            Passionate about leveraging technology to solve real-world problems,
-            I am driven by a love for coding and a commitment to continuous
-            learning. I thrive in challenging environments that push me to
-            innovate and grow, aspiring to contribute to groundbreaking projects
-            and create solutions that make a meaningful impact.
+            My technical skill set includes{" "}
+            <strong>
+              JavaScript, TypeScript, Node.js, Fastify, React.js, MongoDB,
+              Redux, Next.js
+            </strong>
+            , and integrations like <strong>Google Cloud Storage</strong>. I
+            specialize in building robust backend APIs and crafting responsive,
+            user-friendly frontend interfaces that align with business goals.
+          </span>
+          <br />
+          <br />
+          <span>
+            I’m also pursuing my <strong>B.Sc. in Computer Science</strong> from{" "}
+            <strong>BITS Pilani</strong>, balancing academics with hands-on
+            industry work. My projects, like a real-time multilingual speech
+            translator and a timezone scheduling tool, reflect my passion for
+            solving real-world problems through clean, efficient code.
+          </span>
+          <br />
+          <br />
+          <span>
+            I'm always looking for opportunities that challenge me to grow and
+            innovate. Open to relocation, I aim to contribute to impactful
+            projects in a collaborative and forward-thinking environment.
           </span>
         </Text>
       </Box>
@@ -62,10 +81,10 @@ const AboutMeIntroduction = () => {
         w={["230px", "300px"]}
         h={["250px", "300px"]}
         src={Profile}
-        alt="Harshal Image"
+        alt={"Harshal Image"}
         display={["none", "none", "block"]}
-        loading="eager"
-        mb="6"
+        loading={"eager"}
+        mb={6}
         borderRadius={"20px"}
       />
     </Flex>

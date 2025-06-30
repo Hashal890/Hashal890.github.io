@@ -15,6 +15,7 @@ const SkillsCard = ({ link, name, color, icon }) => {
           borderColor={"blue.400"}
           rounded={"lg"}
           _hover={{ shadow: "md" }}
+          p={1}
         >
           {name === "Postman" ? (
             <Image

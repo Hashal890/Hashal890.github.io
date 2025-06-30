@@ -7,9 +7,9 @@ const HomeCommonButton = ({ link, icon, title }) => {
       as={"a"}
       href={link}
       target={"_blank"}
-      rel="noopener noreferrer"
+      rel={"noopener noreferrer"}
       rightIcon={icon}
-      w="ms"
+      w={"ms"}
       mt={6}
       colorScheme={"messenger"}
       size={"md"}

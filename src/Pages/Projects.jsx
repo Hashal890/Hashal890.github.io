@@ -6,9 +6,9 @@ import {
   TabPanel,
   SimpleGrid,
 } from "@chakra-ui/react";
-import ProjectCard from "../components/projects/ProjectCard";
-import { ProjectsList } from "../assets/data";
-import SectionHeading from "../components/common/SectionHeading";
+import ProjectCard from "../components/projects/ProjectCard.jsx";
+import { ProjectsList } from "../assets/data.js";
+import SectionHeading from "../components/common/SectionHeading.jsx";
 
 const Projects = () => {
   return (
@@ -23,7 +23,12 @@ const Projects = () => {
       minH={"90vh"}
     >
       <SectionHeading sectionName={"Projects"} />
-      <Tabs variant="soft-rounded" colorScheme="blue" align="center" w="100%">
+      <Tabs
+        variant={"soft-rounded"}
+        colorScheme={"blue"}
+        align={"center"}
+        w={"100%"}
+      >
         <TabPanels>
           <TabPanel px={0}>
             <SimpleGrid columns={[1, 2, 2, 3, 4]} spacing={4} mt={8}>

@@ -1,9 +1,9 @@
 import React from "react";
 import { VStack } from "@chakra-ui/react";
-import SectionHeading from "../components/common/SectionHeading";
-import GitHubCommitsInfo from "../components/github-stats/GitHubCommitsInfo";
-import GitHubCalendarCreator from "../components/github-stats/GitHubCalendarCreator";
-// import CodingStatistics from "../components/github-stats/CodingStatistics";
+import SectionHeading from "../components/common/SectionHeading.jsx";
+import GitHubCommitsInfo from "../components/github-stats/GitHubCommitsInfo.jsx";
+import GitHubCalendarCreator from "../components/github-stats/GitHubCalendarCreator.jsx";
+// import CodingStatistics from "../components/github-stats/CodingStatistics.jsx";
 
 const GithubStatistics = () => {
   return (

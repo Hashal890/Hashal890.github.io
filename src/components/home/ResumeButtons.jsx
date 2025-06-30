@@ -2,7 +2,7 @@ import React from "react";
 import { Flex } from "@chakra-ui/react";
 import { IoMdDownload } from "react-icons/io";
 import { FaEye } from "react-icons/fa";
-import HomeCommonButton from "./HomeCommonButton";
+import HomeCommonButton from "./HomeCommonButton.jsx";
 
 const ResumeButtons = () => {
   return (

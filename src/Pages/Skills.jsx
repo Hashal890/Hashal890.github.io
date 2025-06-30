@@ -17,7 +17,7 @@ const Skills = () => {
       minH={"90vh"}
     >
       <SectionHeading sectionName={"Skills"} />
-      <SimpleGrid columns={[4, 5, 7]} spacing={4} mb={5}>
+      <SimpleGrid columns={[4, 5, 6]} spacing={4} mb={5}>
         {SkillsList.map((skill) => (
           <SkillsCard key={skill.id} {...skill} />
         ))}

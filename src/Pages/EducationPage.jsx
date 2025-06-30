@@ -1,8 +1,8 @@
 import React from "react";
 import { VStack } from "@chakra-ui/react";
-import SectionHeading from "../components/common/SectionHeading";
-import { EducationDetails } from "../assets/data";
-import EducationCard from "../components/education/EducationCard";
+import SectionHeading from "../components/common/SectionHeading.jsx";
+import { EducationDetails } from "../assets/data.js";
+import EducationCard from "../components/education/EducationCard.jsx";
 
 const EducationPage = () => {
   return (

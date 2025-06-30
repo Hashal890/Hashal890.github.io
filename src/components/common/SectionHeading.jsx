@@ -1,5 +1,5 @@
-import { Code, useColorModeValue } from "@chakra-ui/react";
 import React from "react";
+import { Code, useColorModeValue } from "@chakra-ui/react";
 
 const SectionHeading = ({ sectionName }) => {
   return (
